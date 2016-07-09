@@ -1,0 +1,52 @@
+
+body {
+	font-family: 'roboto';
+
+}
+
+
+.jumbotron {
+	background-color: #fdacab;
+	margin-bottom: 0px;
+}
+
+.jumbotron.blog {
+	background-color: #3dbeb9;
+}
+
+h1#header-title {
+	font-weight: 900;
+	color: white;
+	text-align: center;
+}
+
+h3#header-subheading {
+	font-weight: 100;
+	color: white;
+	text-align: center;
+}
+
+.nav.nav-tabs {
+	background-color: white;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #3dbeb9;
+
+}
+
+.nav-tabs a {
+	color:#3dbeb9;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #fdacab;
+    color: white;
+    border-radius:0px;
+}
+
+.intro {
+	color: #fdacab;
+	font-weight: 900;
+}
