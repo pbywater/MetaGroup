@@ -60,7 +60,7 @@
 				<label for="forname">Forename *</label>
 			</td>
 			<td valign="top">
-				<input class="name" type="text" name="forname" maxlength="50" size="30" required>
+				<input class="name" type="text" name="forname" minlength="2" maxlength="50" size="30" required>
 			</td>
 		</tr>
 		<tr>
@@ -68,7 +68,7 @@
 				<label for="surname">Surname *</label>
 			</td>
 			<td valign="top">
-				<input class="name" type="text" name="surname" maxlength="50" required>
+				<input class="name" type="text" name="surname" minlength="2" maxlength="50" required>
 			</td>
 		</tr>
 		<tr>
@@ -84,7 +84,7 @@
 				<label for="tel">Telephone Number</label>
 			</td>
 			<td valign="top">
-				<input class="name" type="text" name="tel" maxlength="13" onkeypress="return isNumberKey(event)" required>
+				<input class="name" type="text" name="tel" minlength="11" maxlength="13" onkeypress="return isNumberKey(event)" required>
 			</td>
 		</tr>
 		<tr>
