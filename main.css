@@ -62,6 +62,10 @@ h3#header-subheading {
 	color: #3dbeb9;
 }
 
+#active>a {
+  font-weight: bold;
+}
+
 /* Shutter Out Horizontal Homepage */
 .hvr-shutter-out-horizontal {
   display: inline-block;
