@@ -26,11 +26,11 @@ $(document).ready(function() {
 //Text character countdown
 
 var text_max = 1000;
-$('#count_message').html(text_max + ' remaining');
+$('#count_message').html(text_max + ' characters remaining');
 $('#text').keyup(function() {
 	var text_length = $('#text').val().length;
 	var text_remaining = text_max - text_length;
-	$('#count_message').html(text_remaining + ' remaining');
+	$('#count_message').html(text_remaining + ' characters remaining');
 });
         
 });
