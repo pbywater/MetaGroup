@@ -13,6 +13,7 @@
 <!-- Latest compiled JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src='main.js'></script>
+<script async="" src="//www.google-analytics.com/analytics.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,900italic,900,700italic,700,500italic,500' rel='stylesheet' type='text/css'>
 </head>
 
@@ -89,10 +90,11 @@
 		</tr>
 		<tr>
 			<td>
-				<label for="comments">Comments * <br /> (1000 characters)</label>
+				<label for="comments">Comments *</label>
 			</td>
 			<td valign="top">
-				<textarea class="name" name="comments" maxlength="1000" rows="6" required></textarea>
+				<textarea id="text" class="name form-control" name="comments" maxlength="1000" rows="6" required></textarea>
+				<h6 id="count_message">1000 characters remaining</h6>
 			</td>
 		</tr>
 		<tr>
