@@ -223,6 +223,15 @@ h3#header-subheading {
   text-align: center;
 }
 
+.sub-button>input{
+  background-color: #fdacab;
+  color: white;
+}
+
+.sub-button>input:hover{
+  background-color: #3dbeb9;
+}
+
 table.contact-form {
   margin: 0 auto;
   width: 450px;
@@ -233,4 +242,9 @@ table.contact-form {
 .name {
   width: 85%;
   border-radius: 5%;
+}
+
+.name:hover{
+  background-color: #3dbeb9;
+  color: white;
 }
