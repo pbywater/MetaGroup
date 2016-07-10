@@ -32,6 +32,57 @@
   <li class='hvr-shutter-out-horizontal other' role="presentation"><a href="quiz.html">Quiz</a></li>
 </ul>
 
+
+<form name="htmlform" method="post" action="html_form_send.php">
+	<table class="contact-form">
+		<tr>
+			<td>
+				<label for="forname">Forename *</label>
+			</td>
+			<td valign="top">
+				<input class="name" type="text" name="forname" maxlength="50" size="30" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="surname">Surname *</label>
+			</td>
+			<td valign="top">
+				<input class="name" type="text" name="surname" maxlength="50" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="email">Email Address *</label>
+			</td>
+			<td valign="top">
+				<input class="name" type="email" name="email" maxlength="80" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="tel">Telephone Number</label>
+			</td>
+			<td valign="top">
+				<input class="name" type="tel" name="tel" maxlength="11" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="comments">Comments * <br /> (1000 characters)</label>
+			</td>
+			<td valign="top">
+				<textarea class="name" name="comments" maxlength="1000" rows="6" required></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="sub-button">
+				<input type="submit" value="Submit">
+			</td>
+		</tr>
+	</table>
+</form>
+
 <footer class="footer footer-other">
 	<div class="container">
 		<p class="alignleft"> <!-- Make text muted? -->

@@ -216,3 +216,21 @@ h3#header-subheading {
 .footer-other .alignleft a:hover , .footer-other .alignleft a:focus , .footer-other .alignright a:hover , .footer-other .alignright a:focus {
   color: #fdacab;
 }
+
+
+/* Contact Form on About Page */
+.sub-button {
+  text-align: center;
+}
+
+table.contact-form {
+  margin: 0 auto;
+  width: 450px;
+  font-family: 'roboto';
+  color: #fdacab;
+}
+
+.name {
+  width: 85%;
+  border-radius: 5%;
+}
