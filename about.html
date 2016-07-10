@@ -61,7 +61,7 @@
 				<label for="forname">Forename *</label>
 			</td>
 			<td valign="top">
-				<input class="name" type="text" name="forname" minlength="2" maxlength="50" size="30" required>
+				<input class="name" type="text" name="forname" minlength="2" maxlength="50" size="30" onkeypress="return isAlphaKey(event)" required>
 			</td>
 		</tr>
 		<tr>
@@ -69,7 +69,7 @@
 				<label for="surname">Surname *</label>
 			</td>
 			<td valign="top">
-				<input class="name" type="text" name="surname" minlength="2" maxlength="50" required>
+				<input class="name" type="text" name="surname" minlength="2" maxlength="50" onkeypress="return isAlphaKey(event)" required>
 			</td>
 		</tr>
 		<tr>
