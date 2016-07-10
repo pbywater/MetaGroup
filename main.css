@@ -116,15 +116,9 @@ h3#header-subheading {
 
 
 
-/* Footer */
+/* Footer General*/
 
-.footer {
-  background-color: #fdacab;
-  margin-top: 20px;
-  padding-top: 10px;
-  display: block;
-  width: 100%;
-}
+
 
 .footer p {
   color: white;
@@ -142,7 +136,30 @@ h3#header-subheading {
   text-decoration: none;
 }
 
-.alignleft a:hover , .alignleft a:focus , .alignright a:hover , .alignright a:focus {
+/* Footer Main Page*/
+
+.footer-main {
+  background-color: #fdacab;
+  margin-top: 20px;
+  padding-top: 10px;
+  display: block;
+  width: 100%;
+}
+
+.footer-main .alignleft a:hover , .footer-main .alignleft a:focus , .footer-main .alignright a:hover , .footer-main .alignright a:focus {
   color: #3dbeb9;
 }
 
+/* Footer Other Pages */
+
+.footer-other {
+  background-color: #3dbeb9;
+  margin-top: 20px;
+  padding-top: 10px;
+  display: block;
+  width: 100%;
+}
+
+.footer-other .alignleft a:hover , .footer-other .alignleft a:focus , .footer-other .alignright a:hover , .footer-other .alignright a:focus {
+  color: #fdacab;
+}
