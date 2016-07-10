@@ -114,3 +114,33 @@ h3#header-subheading {
 
 /* Shutter Out Horizontal Other Pages */
 
+
+
+/* Footer */
+
+.footer {
+  background-color: #fdacab;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.footer p {
+  color: white;
+}
+
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
+
+.alignleft a , .alignright a{
+  color: white;
+  text-decoration: none;
+}
+
+.alignleft a:hover , .alignleft a:focus , .alignright a:hover , .alignright a:focus {
+  color: #3dbeb9;
+}
+
