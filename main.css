@@ -122,6 +122,8 @@ h3#header-subheading {
   background-color: #fdacab;
   margin-top: 20px;
   padding-top: 10px;
+  display: block;
+  width: 100%;
 }
 
 .footer p {
