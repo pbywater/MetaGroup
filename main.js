@@ -1,20 +1,20 @@
 //Allows only numbers
 //charCode values can be found here: http://stevehardie.com/2009/09/character-code-list-char-code/ 
-//Used charCode to limit input to only numbers 
+//Used charCode to limit input to only numbers and + symbol
 // || means OR
 // && means AND
 function isNumberKey(evt){
     var charCode = (evt.which) ? evt.which : event.keyCode
-    if (charCode > 31 && (charCode < 48 || charCode > 57))
+    if ((charCode > 31 && (charCode < 43 || charCode > 57)) || charCode > 43 && charCode < 48)
         return false;
     return true;
 }
 
 //Allows only letters
-//Used charCode to limit input to only letters
+//Used charCode to limit input to only letters & hyphen
 function isAlphaKey(evt){
     var charCode = (evt.which) ? evt.which : event.keyCode
-    if ((charCode > 32 && charCode <65) || (charCode > 90 && charCode < 97) || (charCode > 122))
+    if ((charCode > 32 && charCode < 45) || (charCode > 45 && charCode <65) || (charCode > 90 && (charCode < 97 || charCode > 122))
         return false;
     return true;
 }
