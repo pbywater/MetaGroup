@@ -79,7 +79,7 @@ h3#header-subheading {
 }
 
 /* Shutter Out Horizontal Homepage */
-.hvr-shutter-out-horizontal.main {
+hvr-shutter-out-horizontal.main {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
