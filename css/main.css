@@ -36,51 +36,93 @@ h3#header-subheading {
 
 /* NAVBAR */
 
-.nav.nav-tabs {
-	background-color: white;
-	margin-bottom: 5%;
+  /* GENERAL */
+
+  /* Collapse/burger button bar color */
+.navbar-toggle>span {
+  background-color: white;
+}  
+#main_menu {
+  width: 100%;
+  height: 3em;
+  display: inline-block;
+}
+#main_menu {
+  z-index:200;
+  width:100%;
+  text-align:center;
+  }
+#main_menu .container-fluid{
+  background-color: white;
+  min-height:3em;
+  width: 100%;
+  display: inline-block;
 }
 
-.nav.nav-tabs li {
-	    	padding: 0% 6.84% 0% 6.84%;
+.menu>li:hover a{
+  color:white;
 }
-
-.nav-tabs {
-    border-bottom: none;
-
-}
-
-.nav-tabs.main a {
-	color:#3dbeb9;
-}
-
-.nav-tabs.other a {
-  color:#fdacab;
-}
-
-
-.nav.main>li>a:focus, .nav.main>li>a:hover {
-    text-decoration: none;
-    background-color: transparent;
-    color: white;
-    border-radius:0px;
-   border: 1px solid #fdacab;
-}
-
-.nav.other>li>a:focus, .nav.other>li>a:hover {
-    text-decoration: none;
-    background-color: transparent;
-    color: white;
-    border-radius:0px;
-   border: 1px solid #3dbeb9;
-}
-
 #active>a {
   font-weight: bold;
 }
 
+.navbar-collapse {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+.menu .menu-item {
+  padding: 0 0 10px 0;
+  display: inline-block;
+  min-height:3em;
+  margin:0;
+  overflow: hidden;
+  width: 200px;
+}
+
+.menu .menu-item>a {
+  font-size: 25px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  width:100%;
+  height: 100%;
+  margin-top:1em;
+  font-family: 'roboto'
+}
+
+  /* HOME NAVBAR */
+.main>.menu-item>a {
+  color: #fdacab;
+}
+   /*Burger/Collapse button - HOME #fdacab #3dbeb9*/
+button.main {
+  background-color: #3dbeb9;
+}
+    /* Line under navbar */
+hr.main {
+  border-color: rgba(61, 190, 185, 0.2);
+}
+
+  /* OTHER PAGES NAVBAR */
+
+.other>.menu-item>a {
+  color: #fdacab;
+}
+
+    /*Burger/Collapse button - OTHER PAGES #fdacab #3dbeb9*/
+button.other {
+  background-color: #fdacab;
+}
+    /* Line under navbar */
+hr.other {
+  border-color: rgba(253, 172, 171, 0.2) ;
+}
+
+
 /* Shutter Out Horizontal Homepage */
-.hvr-shutter-out-horizontal.main {
+.main>.hvr-shutter-out-horizontal {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -96,7 +138,7 @@ h3#header-subheading {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-shutter-out-horizontal.main:before {
+.main>.hvr-shutter-out-horizontal:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -117,17 +159,17 @@ h3#header-subheading {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-shutter-out-horizontal.main:hover, .hvr-shutter-out-horizontal.main:focus, .hvr-shutter-out-horizontal.main:active {
+.main>.hvr-shutter-out-horizontal:hover, .main>.hvr-shutter-out-horizontal:focus, .main>.hvr-shutter-out-horizontal:active {
   color: white;
 }
-.hvr-shutter-out-horizontal.main:hover:before, .hvr-shutter-out-horizontal.main:focus:before, .hvr-shutter-out-horizontal.main:active:before {
+.main>.hvr-shutter-out-horizontal:hover:before, .main>.hvr-shutter-out-horizontal:focus:before, .main>.hvr-shutter-out-horizontal:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
 /* Shutter Out Horizontal Other Pages */
 
-.hvr-shutter-out-horizontal.other {
+.other>.hvr-shutter-out-horizontal {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -143,7 +185,7 @@ h3#header-subheading {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-shutter-out-horizontal.other:before {
+.other>.hvr-shutter-out-horizontal:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -164,10 +206,10 @@ h3#header-subheading {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-shutter-out-horizontal.other:hover, .hvr-shutter-out-horizontal.other:focus, .hvr-shutter-out-horizontal.other:active {
+.other>.hvr-shutter-out-horizontal:hover, .other>.hvr-shutter-out-horizontal:focus, .other>.hvr-shutter-out-horizontal:active {
   color: white;
 }
-.hvr-shutter-out-horizontal.other:hover:before, .hvr-shutter-out-horizontal.other:focus:before, .hvr-shutter-out-horizontal.other:active:before {
+.other>.hvr-shutter-out-horizontal:hover:before, .other>.hvr-shutter-out-horizontal:focus:before, .other>.hvr-shutter-out-horizontal:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
