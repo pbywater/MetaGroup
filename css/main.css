@@ -277,14 +277,22 @@ form {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  /*Either pick 0.8 transparent pink: rgba(253, 172, 171, 0.8)  OR 0.8 transparent blue: rgba(61, 190, 185, 0.8); */
-  background: rgba(253, 172, 171, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
   border-radius: 100%; /* Creates circular button. Remove line to create square button */
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
   -moz-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top-home {
+/*Button color for home*/
+/*Either pick 0.8 transparent pink: rgba(253, 172, 171, 0.8)  OR 0.8 transparent blue: rgba(61, 190, 185, 0.8); */
+  background: rgba(253, 172, 171, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+}
+.cd-top-other {
+/*Button color for all pages except home*/
+/*Either pick 0.8 transparent pink: rgba(253, 172, 171, 0.8)  OR 0.8 transparent blue: rgba(61, 190, 185, 0.8); */
+  background: rgba(253, 172, 171, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
 }
 .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
   -webkit-transition: opacity .3s 0s, visibility 0s 0s;
