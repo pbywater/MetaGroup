@@ -1,4 +1,3 @@
-
 body {
 	font-family: 'roboto';
 
@@ -25,6 +24,17 @@ h3#header-subheading {
 	color: white;
 	text-align: center;
 }
+
+.intro {
+  color: #fdacab;
+  font-weight: 900;
+}
+
+.explanation {
+  color: #3dbeb9;
+}
+
+/* NAVBAR */
 
 .nav.nav-tabs {
 	background-color: white;
@@ -63,15 +73,6 @@ h3#header-subheading {
     color: white;
     border-radius:0px;
    border: 1px solid #3dbeb9;
-}
-
-.intro {
-	color: #fdacab;
-	font-weight: 900;
-}
-
-.explanation {
-	color: #3dbeb9;
 }
 
 #active>a {
@@ -170,7 +171,9 @@ h3#header-subheading {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+/* END OF NAVBAR */
 
+/* FOOTER */
 /* Footer General*/
 
 .footer p {
@@ -257,8 +260,68 @@ form {
   font-weight: bold;
   color: #fdacab;
 }
+/* END OF FOOTER */
 
-/* quiz*/
+
+/* BACK TO TOP BUTTON */
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  /*Either pick 0.8 transparent pink: rgba(253, 172, 171, 0.8)  OR 0.8 transparent blue: rgba(61, 190, 185, 0.8); */
+  background: rgba(253, 172, 171, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  border-radius: 100%; /* Creates circular button. Remove line to create square button */
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color:  #3dbeb9;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+/* END OF BACK TO TOP BUTTON */
+
+
+/* QUIZ*/
 
 .wrapper {
   text-align:center;
