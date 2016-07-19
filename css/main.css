@@ -88,7 +88,6 @@ h3#header-subheading {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #fdacab;
   color: white;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -161,6 +160,33 @@ h3#header-subheading {
 .footer-other .alignleft a:hover , .footer-other .alignleft a:focus , .footer-other .alignright a:hover , .footer-other .alignright a:focus {
   color: #fdacab;
 }
+
+/* Social Icons in Footer General*/
+.social-icon .fa:hover{
+  font-size: 330%;
+  transition: 0.3s;
+}
+.fa {
+  margin: 0 6px;
+}
+.social-icon{
+  text-align: center;
+  font-size: 16px;
+  font-family: 'roboto';
+}
+.social-icon>a{
+  text-decoration: none;
+  color: white;
+}
+  /* Social Icons on Home Page */
+.social-icon.main .fa:hover{
+  color: #3dbeb9;
+}
+  /* Social Icons on Other Pages */
+.social-icon.other .fa:hover{
+  color: #fdacab;
+}
+
 /* END OF FOOTER */
 
 /* CONTACT FORM on About Page */
