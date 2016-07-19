@@ -187,6 +187,69 @@ h3#header-subheading {
   color: #fdacab;
 }
 
+/* SEARCH BAR */
+
+.input-group{
+  width: 40%;
+  margin: 0 auto;
+}
+
+  /*Search Bar on Home Page */
+
+.main .input-group-btn>button {
+  background-color: #3dbeb9;
+  color: white;
+}
+.main .input-group-btn>button:hover {
+  /* Add some parameters?? */
+}
+.main input{
+  color: #3dbeb9;
+}
+
+/* Placeholder Color - Home */
+.main>input::-webkit-input-placeholder {
+color: #fdacab !important;
+}
+.main>input:-moz-placeholder { /* Firefox 18- */
+color: #fdacab !important;  
+}
+.main>input::-moz-placeholder {  /* Firefox 19+ */
+color: #fdacab !important;  
+}
+.main>input:-ms-input-placeholder {  
+color: #fdacab !important;  
+}
+
+  /*Search Bar on Other Pages */  
+
+.other .input-group-btn>button {
+  background-color: #fdacab;
+  color: white;
+}
+.other .input-group-btn>button:hover {
+  /* Add some parameters?? */
+}
+.other input{
+  color: #fdacab;
+}
+
+/* Placeholder Color - Other */
+.other>input::-webkit-input-placeholder {
+color: #3dbeb9 !important;
+}
+.other>input:-moz-placeholder { /* Firefox 18- */
+color: #3dbeb9 !important;  
+}
+.other>input::-moz-placeholder {  /* Firefox 19+ */
+color: #3dbeb9 !important;  
+}
+.other>input:-ms-input-placeholder {  
+color: #3dbeb9 !important;  
+}
+
+/* END OF SEARCH BAR */
+
 /* END OF FOOTER */
 
 /* CONTACT FORM on About Page */
@@ -217,7 +280,11 @@ table.contact-form {
 form {
   margin-top: 40px;
 }
-#active-ft {
+.footer-main #active-ft {
+  font-weight: bold;
+  color: #3dbeb9;
+}
+.footer-other #active-ft {
   font-weight: bold;
   color: #fdacab;
 }
