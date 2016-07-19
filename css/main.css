@@ -179,11 +179,11 @@ h3#header-subheading {
   color: white;
 }
   /* Social Icons on Home Page */
-.social-icon.main .fa:hover{
+.footer-main .social-icon .fa:hover{
   color: #3dbeb9;
 }
   /* Social Icons on Other Pages */
-.social-icon.other .fa:hover{
+.footer-other .social-icon .fa:hover{
   color: #fdacab;
 }
 
@@ -196,55 +196,55 @@ h3#header-subheading {
 
   /*Search Bar on Home Page */
 
-.main .input-group-btn>button {
+.footer-main .input-group-btn>button {
   background-color: #3dbeb9;
   color: white;
 }
-.main .input-group-btn>button:hover {
+.footer-main .input-group-btn>button:hover {
   /* Add some parameters?? */
 }
-.main input{
+.footer-main input{
   color: #3dbeb9;
 }
 
 /* Placeholder Color - Home */
-.main>input::-webkit-input-placeholder {
+.footer-main input::-webkit-input-placeholder {
 color: #fdacab !important;
 }
-.main>input:-moz-placeholder { /* Firefox 18- */
+.footer-main input:-moz-placeholder { /* Firefox 18- */
 color: #fdacab !important;  
 }
-.main>input::-moz-placeholder {  /* Firefox 19+ */
+.footer-main input::-moz-placeholder {  /* Firefox 19+ */
 color: #fdacab !important;  
 }
-.main>input:-ms-input-placeholder {  
+.footer-main input:-ms-input-placeholder {  
 color: #fdacab !important;  
 }
 
   /*Search Bar on Other Pages */  
 
-.other .input-group-btn>button {
+.footer-other .input-group-btn>button {
   background-color: #fdacab;
   color: white;
 }
-.other .input-group-btn>button:hover {
+.footer-other .input-group-btn>button:hover {
   /* Add some parameters?? */
 }
-.other input{
+.footer-other input{
   color: #fdacab;
 }
 
 /* Placeholder Color - Other */
-.other>input::-webkit-input-placeholder {
+.footer-other input::-webkit-input-placeholder {
 color: #3dbeb9 !important;
 }
-.other>input:-moz-placeholder { /* Firefox 18- */
+.footer-other input:-moz-placeholder { /* Firefox 18- */
 color: #3dbeb9 !important;  
 }
-.other>input::-moz-placeholder {  /* Firefox 19+ */
+.footer-other input::-moz-placeholder {  /* Firefox 19+ */
 color: #3dbeb9 !important;  
 }
-.other>input:-ms-input-placeholder {  
+.footer-other input:-ms-input-placeholder {  
 color: #3dbeb9 !important;  
 }
 
