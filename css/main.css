@@ -258,6 +258,8 @@ color: #3dbeb9 !important;
   display: inline-block;
   height: 40px;
   width: 40px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   position: fixed;
   bottom: 40px;
   right: 10px;
@@ -297,10 +299,75 @@ color: #3dbeb9 !important;
   /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
   opacity: .5;
 }
-.cd-top:hover {
+.cd-top-other:hover {
   background-color:  #3dbeb9;
   opacity: 1;
 }
+.cd-top-home:hover {
+  background-color:  #fdacab;
+  opacity: 1;
+}
+/* Back to top button animation - moves up and down */
+.cd-top:hover, .cd-top:focus, .cd-top:active {
+  -webkit-animation-name: cd-top-float, cd-top;
+  animation-name: cd-top-float, cd-top;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+@-webkit-keyframes cd-top {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes cd-top {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes cd-top-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes cd-top-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+/* End of animation */
+
 @media only screen and (min-width: 768px) {
   .cd-top {
     right: 20px;
