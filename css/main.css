@@ -1,35 +1,28 @@
+/* Main Body */
 body {
 	font-family: 'roboto';
-
 }
-
-
 .jumbotron {
 	background-color: #fdacab;
 	margin-bottom: 0px;
 }
-
 .jumbotron.blog {
 	background-color: #3dbeb9;
 }
-
 h1#header-title {
 	font-weight: 900;
 	color: white;
 	text-align: center;
 }
-
 h3#header-subheading {
 	font-weight: 100;
 	color: white;
 	text-align: center;
 }
-
 .intro {
   color: #fdacab;
   font-weight: 900;
 }
-
 .explanation {
   color: #3dbeb9;
 }
@@ -40,38 +33,29 @@ h3#header-subheading {
 	background-color: white;
 	margin-bottom: 5%;
 }
-
+.nav-tabs {
+    border-bottom: none;
+}
 .nav.nav-tabs li {
 	    	padding: 0% 6.84% 0% 6.84%;
 }
-
-.nav-tabs {
-    border-bottom: none;
-
-}
-
 .nav-tabs.main a {
 	color:#3dbeb9;
 }
-
 .nav-tabs.other a {
   color:#fdacab;
 }
 
-
-.nav.main>li>a:focus, .nav.main>li>a:hover {
+.nav>li>a:focus, .nav>li>a:hover {
     text-decoration: none;
     background-color: transparent;
     color: white;
     border-radius:0px;
+}
+.nav.main>li>a:focus, .nav.main>li>a:hover {
    border: 1px solid #fdacab;
 }
-
 .nav.other>li>a:focus, .nav.other>li>a:hover {
-    text-decoration: none;
-    background-color: transparent;
-    color: white;
-    border-radius:0px;
    border: 1px solid #3dbeb9;
 }
 
@@ -79,8 +63,8 @@ h3#header-subheading {
   font-weight: bold;
 }
 
-/* Shutter Out Horizontal Homepage */
-.hvr-shutter-out-horizontal.main {
+/* Shutter Out Horizontal General */
+.hvr-shutter-out-horizontal {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -96,7 +80,7 @@ h3#header-subheading {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-shutter-out-horizontal.main:before {
+.hvr-shutter-out-horizontal:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -117,60 +101,24 @@ h3#header-subheading {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-shutter-out-horizontal.main:hover, .hvr-shutter-out-horizontal.main:focus, .hvr-shutter-out-horizontal.main:active {
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
   color: white;
 }
-.hvr-shutter-out-horizontal.main:hover:before, .hvr-shutter-out-horizontal.main:focus:before, .hvr-shutter-out-horizontal.main:active:before {
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+/* Shutter Out Horizontal Home */
+.hvr-shutter-out-horizontal.main:before {
+  background: #fdacab;
 }
 
 /* Shutter Out Horizontal Other Pages */
-
-.hvr-shutter-out-horizontal.other {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  background: white;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
 .hvr-shutter-out-horizontal.other:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background: #3dbeb9;
-  color: white;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 50%;
-  transform-origin: 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
 }
-.hvr-shutter-out-horizontal.other:hover, .hvr-shutter-out-horizontal.other:focus, .hvr-shutter-out-horizontal.other:active {
-  color: white;
-}
-.hvr-shutter-out-horizontal.other:hover:before, .hvr-shutter-out-horizontal.other:focus:before, .hvr-shutter-out-horizontal.other:active:before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
+
 /* END OF NAVBAR */
 
 /* FOOTER */
@@ -179,88 +127,75 @@ h3#header-subheading {
 .footer p {
   color: white;
 }
-
 .alignleft {
   float: left;
 }
 .alignright {
   float: right;
 }
-
 .alignleft a , .alignright a{
   color: white;
   text-decoration: none;
 }
 
-/* Footer Main Page*/
-
-.footer-main {
-  background-color: #fdacab;
+/* Footer General*/
+.footer {
   margin-top: 20px;
   padding-top: 10px;
   display: block;
   width: 100%;
 }
 
+/* Footer Main Page*/
+.footer-main {
+  background-color: #fdacab;
+}
 .footer-main .alignleft a:hover , .footer-main .alignleft a:focus , .footer-main .alignright a:hover , .footer-main .alignright a:focus {
   color: #3dbeb9;
 }
 
 /* Footer Other Pages */
-
 .footer-other {
   background-color: #3dbeb9;
-  margin-top: 20px;
-  padding-top: 10px;
-  display: block;
-  width: 100%;
 }
-
 .footer-other .alignleft a:hover , .footer-other .alignleft a:focus , .footer-other .alignright a:hover , .footer-other .alignright a:focus {
   color: #fdacab;
 }
+/* END OF FOOTER */
 
-
-/* Contact Form on About Page */
+/* CONTACT FORM on About Page */
 .sub-button {
   text-align: center;
 }
-
 .sub-button>input{
   background-color: #fdacab;
   color: white;
 }
-
 .sub-button>input:hover{
   background-color: #3dbeb9;
 }
-
 table.contact-form {
   margin: 0 auto;
   width: 450px;
   font-family: 'roboto';
   color: #fdacab;
 }
-
 .name {
   width: 85%;
   border-radius: 5%;
 }
-
 .name:hover{
   background-color: #3dbeb9;
   color: white;
 }
-
 form {
   margin-top: 40px;
 }
-
 #active-ft {
   font-weight: bold;
   color: #fdacab;
 }
-/* END OF FOOTER */
+/* END OF CONTACT FORM */
 
 
 /* BACK TO TOP BUTTON */
@@ -294,7 +229,7 @@ form {
 /*Either pick 0.8 transparent pink: rgba(253, 172, 171, 0.8)  OR 0.8 transparent blue: rgba(61, 190, 185, 0.8); */
   background: rgba(253, 172, 171, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
 }
-.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .cd-top:hover {
   -webkit-transition: opacity .3s 0s, visibility 0s 0s;
   -moz-transition: opacity .3s 0s, visibility 0s 0s;
   transition: opacity .3s 0s, visibility 0s 0s;
@@ -308,7 +243,7 @@ form {
   /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
   opacity: .5;
 }
-.no-touch .cd-top:hover {
+.cd-top:hover {
   background-color:  #3dbeb9;
   opacity: 1;
 }
