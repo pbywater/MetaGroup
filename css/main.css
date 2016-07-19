@@ -100,7 +100,7 @@ h3#header-subheading {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+.hvr-shutter-out-horizontal:hover a, .hvr-shutter-out-horizontal:focus a, .hvr-shutter-out-horizontal:active a {
   color: white;
 }
 .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
