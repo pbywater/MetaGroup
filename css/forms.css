@@ -1,0 +1,71 @@
+/* CONTACT FORM on About Page */
+
+  /* Titles */
+#contact-form label{
+  font-weight: bold;
+  font-size: 18px;
+}
+form {
+  margin: 0 auto;
+  width: 450px;
+  font-family: 'roboto';
+  color: #fdacab;
+}
+#contact-form textarea , #contact-form select{
+  width:100%;
+  padding: 2% 2%;
+  margin-bottom:3%;
+  border: 2px solid #3dbeb9;
+  border-radius: 5px;
+  text-align:left;
+  color: #3dbeb9;
+  background-color: white;
+}
+#contact-form textarea:focus , #contact-form textarea:hover , #contact-form select:focus , #contact-form select:hover{
+    border: 3px solid #3dbeb9;
+}
+
+/* Placeholder Color */
+#contact-form textarea::-webkit-input-placeholder , input::-webkit-input-placeholder {
+color: #3dbeb9 !important;
+opacity: 0.5;
+}
+#contact-form textarea:-moz-placeholder , input:-moz-placeholder{ /* Firefox 18- */
+color: #3dbeb9 !important; 
+opacity: 0.5; 
+}
+#contact-form textarea::-moz-placeholder , input::-moz-placeholder {  /* Firefox 19+ */
+color: #3dbeb9 !important;
+opacity: 0.5;  
+}
+#contact-form textarea:-ms-input-placeholder , input:-ms-input-placeholder {  
+color: #3dbeb9 !important; 
+opacity: 0.5; 
+}
+
+/* Characters remaining message */
+#count_message {
+  text-align: right;
+}
+
+ /*Submit Button*/ 
+#contact-form input[type=button], input[type=submit], input[type=reset] {
+    background-color: #fdacab;
+    border-radius: 5px;
+    color: white;
+    padding: 2% 2%;
+    text-decoration: none;
+    margin: 3%;
+    cursor: pointer;
+    width:30%;
+    font-size:18px;
+    display: inline-block;
+}
+.wrapper {
+  text-align: center;
+}
+.sub-btn:hover{
+  background-color: #3dbeb9;
+}
+
+/* END OF CONTACT FORM */
