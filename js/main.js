@@ -3,10 +3,10 @@ $(document).ready(function() {
 
 //TEXT CHARACTER COUNT
 
-var text_max = 1000;
+var text_max = 500;
 $('#count_message').html(text_max + ' characters remaining');
-$('#text').keyup(function() {
-    var text_length = $('#text').val().length;
+$('#msg').keyup(function() {
+    var text_length = $('#msg').val().length;
     var text_remaining = text_max - text_length;
     $('#count_message').html(text_remaining + ' characters remaining');
 });

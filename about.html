@@ -49,6 +49,7 @@
 <!-- CONTENT -->
 <div class="container">
 
+<div id="main_content">
 <h2 class='intro'>
 About Us...
 </h2>
@@ -118,79 +119,48 @@ Gvianeonvqo
 
 
 	</div>
-
+<br />
 <!-- CONTACT FORM -->
-<div>
-<form name="htmlform" method="post" action="thank-you.html">
-	<table class="contact-form">
-		<tr>
-			<td>
-				<label for="title">Title *</label>		
-			</td>
-			<td valign="top">
-				<select name="title" title="Please select a title." required="">
-					<option disabled selected value> -- select an option -- </option>
- 					<option value="miss">Miss</option>
-  					<option value="mrs">Mrs</option>
-  					<option value="mr">Mr</option>
-  					<option value="ms">Ms</option>
-  					<option value="sir">Sir</option>
-  					<option value="dr">Dr</option>
-  					<option value="lady">Lady</option>
-  					<option value="lord">Lord</option>
-  					<option value="other">Other</option>
-				</select>
-			</td>
-		</tr>
-		
-		<tr>
-			<td>
-				<label for="forname">Forename *</label>
-			</td>
-			<td valign="top">
-				<input class="name" type="text" name="forname" minlength="2" maxlength="50" size="30" onkeypress="return isAlphaKey(event)" required>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<label for="surname">Surname *</label>
-			</td>
-			<td valign="top">
-				<input class="name" type="text" name="surname" minlength="2" maxlength="50" onkeypress="return isAlphaKey(event)" required>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<label for="email">Email Address *</label>
-			</td>
-			<td valign="top">
-				<input class="name" type="email" name="email" maxlength="80" required>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<label for="tel">Telephone Number</label>
-			</td>
-			<td valign="top">
-				<input class="name" type="text" name="tel" minlength="11" maxlength="13" onkeypress="return isNumberKey(event)" required>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<label for="comments">Comments *</label>
-			</td>
-			<td valign="top">
-				<textarea id="text" class="name form-control" name="comments" maxlength="1000" rows="6" required></textarea>
-				<h6 id="count_message">1000 characters remaining</h6>
-			</td>
-		</tr>
-		<tr>
-			<td colspan="2" class="sub-button">
-				<input type="submit" value="Submit">
-			</td>
-		</tr>
-	</table>
-</form>
+
+<div id="contact-form">
+
+	<form name="htmlform" method="post" action="thank-you.html" autocomplete="on">
+
+    	<label for="title">title</label>    
+    	<p><select name="title" title="Please select a title." required="">
+      	<option disabled selected value> -- select an option -- </option>
+      	<option value="miss">Miss</option>
+        <option value="mrs">Mrs</option>
+        <option value="mr">Mr</option>
+      	<option value="ms">Ms</option>
+        <option value="sir">Sir</option>
+        <option value="dr">Dr</option>
+        <option value="lady">Lady</option>
+        <option value="lord">Lord</option>
+        <option value="other">Other</option>
+    	</select></p>
+
+      	<label for="forname">forename</label>
+      	<p><textarea rows='1' class="name" type="text" name="fname" minlength="2" maxlength="50" size="30" onkeypress="return isAlphaKey(event)" required></textarea></p>
+      
+      	<label for="surname">surname</label>
+      	<p><textarea rows='1' class="name" type="text" name="lname" minlength="2" maxlength="50" onkeypress="return isAlphaKey(event)" required></textarea></p>
+      
+      	<label for="email">email address</label>
+      	<p><textarea rows='1' class="name" type="email" name="email" maxlength="80" placeholder="name@example.com" required></textarea></p>
+
+      	<label for="tel">telephone number (optional)</label>
+      	<p><textarea  rows='1' class="name" type="text" name="tel" minlength="11" maxlength="13" onkeypress="return isNumberKey(event)" required></textarea></p>
+
+      	<label for="msg">your message</label>
+      	<p><textarea id="msg" class="name form-control" name="comments" maxlength="500" rows="8" required></textarea><h6 id="count_message">500 characters remaining</h6></p>
+
+      	<div class="wrapper">
+      	<input class="sub-btn" type="submit" value="Submit"> </div>
+    </form>
+</div>
+
+
 </div>
 </div>
 
