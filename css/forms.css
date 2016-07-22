@@ -93,13 +93,38 @@ opacity: 0.5;
 #left_nav form {
   display: block;
 }
-#left_nav textarea {
-  margin: 0 10px;
-  width: 35%;
+
+#newsletter-form textarea{
+  width:40%;
+  padding: 2% 2%;
+  border: 2px solid #3dbeb9;
+  border-radius: 5px;
+  text-align:left;
+  color: #3dbeb9;
+  background-color: white;
 }
-#left_nav textarea:hover {
-  opacity:1;
+#newsletter-form textarea:focus , #newsletter-form textarea:hover{
+    border: 3px solid #3dbeb9;
 }
+
+/* Placeholder Color */
+#newsletter-form textarea::-webkit-input-placeholder , input::-webkit-input-placeholder {
+color: #3dbeb9 !important;
+opacity: 0.5;
+}
+#newsletter-form textarea:-moz-placeholder , input:-moz-placeholder{ /* Firefox 18- */
+color: #3dbeb9 !important; 
+opacity: 0.5; 
+}
+#newsletter-form textarea::-moz-placeholder , input::-moz-placeholder {  /* Firefox 19+ */
+color: #3dbeb9 !important;
+opacity: 0.5;  
+}
+#newsletter-form textarea:-ms-input-placeholder , input:-ms-input-placeholder {  
+color: #3dbeb9 !important; 
+opacity: 0.5; 
+}
+
 
 /*Submit Button*/ 
 #newsletter-form input[type=button], input[type=submit], input[type=reset] {
