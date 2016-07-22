@@ -184,13 +184,6 @@ h3#header-subheading {
 }
 
 /* Social Icons in Footer General*/
-.social-icon .fa:hover{
-  font-size: 330%;
-  transition: 0.3s;
-}
-.fa {
-  margin: 0 6px;
-}
 .social-icon{
   text-align: center;
   font-size: 16px;
@@ -199,6 +192,24 @@ h3#header-subheading {
 .social-icon>a{
   text-decoration: none;
   color: white;
+}
+.fa {
+  margin: 0 6px;
+}
+/* Translates icon up & changes color when hovered over */
+.social-icon .fa{
+  transition: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.social-icon .fa:hover , .social-icon .fa:focus , .social-icon .fa:active{
+  font-size: 300%;
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
 }
   /* Social Icons on Home Page */
 .footer-main .social-icon .fa:hover{
@@ -210,7 +221,6 @@ h3#header-subheading {
 }
 
 /* SEARCH BAR */
-
 .input-group{
   width: 40%;
   margin: 0 auto;
