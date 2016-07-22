@@ -27,6 +27,27 @@ h3#header-subheading {
   color: #3dbeb9;
 }
 
+/* SOCIAL ICONS IN FOOTER */
+.social-icon .fa:hover{
+  font-size: 330%;
+  transition: 0.3s;
+  color: #fdacab;
+}
+.fa {
+  margin: 0 6px;
+}
+.social-icon{
+  text-align: center;
+  font-size: 16px;
+  font-family: 'roboto';
+}
+.social-icon>a{
+  text-decoration: none;
+  color: white;
+}
+/* END OF SOCIAL ICONS IN NAVBAR*/
+
+
 /* NAVBAR */
 
 .nav.nav-tabs {
