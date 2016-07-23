@@ -171,6 +171,10 @@ h3#header-subheading {
 .footer-main {
   background-color: #fdacab;
 }
+.footer-main #active-ft {
+  font-weight: bold;
+  color: #3dbeb9;
+}
 .footer-main .alignleft a:hover , .footer-main .alignleft a:focus , .footer-main .alignright a:hover , .footer-main .alignright a:focus {
   color: #3dbeb9;
 }
@@ -178,6 +182,10 @@ h3#header-subheading {
 /* Footer Other Pages */
 .footer-other {
   background-color: #3dbeb9;
+}
+.footer-other #active-ft {
+  font-weight: bold;
+  color: #fdacab;
 }
 .footer-other .alignleft a:hover , .footer-other .alignleft a:focus , .footer-other .alignright a:hover , .footer-other .alignright a:focus {
   color: #fdacab;
