@@ -1,9 +1,10 @@
 .intro-res {
   color: #fdacab;
   font-weight: 900;
-  text-align: center;
+  text-align: right;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
+  font-size: 60px;
 }
 #main_content .home img:hover ~ span {
   z-index:300;
