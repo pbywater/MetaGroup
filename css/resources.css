@@ -58,3 +58,33 @@
 #photo {
   margin-top:30px;
 }
+
+#languages ul {
+  text-decoration: none;
+  list-style: none;
+  padding-bottom: 7px;
+  text-align: center;
+  padding-left: 0px;
+  background-color: #3dbeb9;
+  width: 35%;
+  border-radius: 20%;
+}
+#languages #active-l a{
+  font-weight: bold;
+  color: #fdacab;
+}
+#languages a {
+  text-decoration: none;
+  color: white;
+}
+#languages a:hover {
+  color: #fdacab;
+}
+#languages {
+  margin-top: -5px;
+  padding-top: 0;
+}
+
+.col-sm-3 {
+  margin-bottom: 100px;
+}
