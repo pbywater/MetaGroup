@@ -446,6 +446,11 @@ color: #3dbeb9 !important;
 
 figure img {
     width: 100%;
+    opacity: 0.8;
+}
+
+figure img:hover {
+  opacity: 1;
 }
 
 .post-box {
