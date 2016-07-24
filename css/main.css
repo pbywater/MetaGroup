@@ -408,6 +408,96 @@ color: #3dbeb9 !important;
 }
 /* End of animation */
 
+/*About Page*/
+
+.abt-img img {
+  position: absolute;
+  width: 60%;
+  display: block;
+  border-radius:50%;
+}
+
+.block {
+  height: 150px;
+}
+
+
+/*End of About Page */
+
+/* QUIZ*/
+
+.wrapper {
+  text-align:center;
+  position:100vh;
+  margin: auto 10px;
+  height: 100%;
+  padding-top: 0px;
+  padding-bottom:20px;
+}
+
+#quiz {
+  background-color: #fdacab;
+  padding-bottom: 20px;
+  width: 100%;
+  border-radius: 2%;
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.questions {
+  font-size: 40px;
+  font-weight: 700;
+  border-top: 10px solid #FFFFFF;
+  border-bottom: 10px solid #FFFFFF;
+  padding: 20px;
+  background-color: #3dbeb9;
+}
+
+.answers div {
+  padding: 10px 0 0 0;
+  font-size: 25px;
+}
+
+.answers div:hover {
+  cursor: pointer;
+  color: #3dbeb9;
+}
+/*adds in hovering different colour when selected */ 
+
+.answers {
+  padding: 0px 0 10px 0px;
+}
+/*adds in space between ansers and correct*/
+
+.checker {
+  display: inline-block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+
+.correct, .false {
+  background-color: #109D59;
+  width: 50px;
+  height: 40px;
+  line-height: 20px;
+  float: left;
+  margin-left: 10px;
+  font-size: 20px;
+}
+/*adds in correct answer colour */
+
+.false {
+  background-color: #DC4437;
+}
+/* adds in incorrect answer colour */
+
+/* END OF QUIZ */
+
+
+/* Media Rules for mobile optimisation */
+
 @media only screen and (min-width: 768px) {
   .cd-top {
     right: 20px;
@@ -501,77 +591,5 @@ color: #3dbeb9 !important;
 }*/
 
 /* END OF BACK TO TOP BUTTON */
-
-
-/* QUIZ*/
-
-.wrapper {
-  text-align:center;
-  position:100vh;
-  margin: auto 10px;
-  height: 100%;
-  padding-top: 0px;
-  padding-bottom:20px;
-}
-
-#quiz {
-  background-color: #fdacab;
-  padding-bottom: 20px;
-  width: 100%;
-  border-radius: 2%;
-  color: #fff;
-  text-align: center;
-  padding-top: 5px;
-}
-
-.questions {
-  font-size: 40px;
-  font-weight: 700;
-  border-top: 10px solid #FFFFFF;
-  border-bottom: 10px solid #FFFFFF;
-  padding: 20px;
-  background-color: #3dbeb9;
-}
-
-.answers div {
-  padding: 10px 0 0 0;
-  font-size: 25px;
-}
-
-.answers div:hover {
-  cursor: pointer;
-  color: #3dbeb9;
-}
-/*adds in hovering different colour when selected */ 
-
-.answers {
-  padding: 0px 0 10px 0px;
-}
-/*adds in space between ansers and correct*/
-
-.checker {
-  display: inline-block;
-  width: 200px;
-  margin: 0 auto;
-}
-
-
-.correct, .false {
-  background-color: #109D59;
-  width: 50px;
-  height: 40px;
-  line-height: 20px;
-  float: left;
-  margin-left: 10px;
-  font-size: 20px;
-}
-/*adds in correct answer colour */
-
-.false {
-  background-color: #DC4437;
-}
-/* adds in incorrect answer colour */
-
-/* END OF QUIZ */
 
 
