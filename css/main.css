@@ -430,10 +430,51 @@ color: #3dbeb9 !important;
 }
 
 
-
-
-
 /*End of About Page */
+
+/*Blog Page */
+
+.row {
+    margin-left: 20%;
+    margin-right: 5%;
+}
+
+.post-box {
+    display: block;
+    margin: 0 -6px 18px;
+}
+
+figure img {
+    width: 100%;
+}
+
+.post-box {
+  border: 5px solid #fdacab;
+    border-radius: 5%;
+}
+
+.post-box:hover  {
+border: 5px solid #3dbeb9;
+    border-radius: 5%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.category {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.post-box p {
+  text-align: center;
+  font-family: 'roboto';
+  font-weight: 500;
+  color: #3dbeb9;
+}
+
+/*End of Blog page */
 
 /* QUIZ*/
 
