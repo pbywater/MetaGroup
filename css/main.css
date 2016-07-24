@@ -447,9 +447,10 @@ color: #3dbeb9 !important;
 figure img {
     width: 100%;
     opacity: 0.8;
+    border-radius: 4% 4% 0% 0%;
 }
 
-figure img:hover {
+.post-box:hover figure img {
   opacity: 1;
 }
 
