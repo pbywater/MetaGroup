@@ -411,15 +411,26 @@ color: #3dbeb9 !important;
 /*About Page*/
 
 .abt-img img {
-  position: absolute;
-  width: 60%;
+  position: relative;
+  width: 100%;
+  display: block;
+  border-radius:50%;
+}
+
+.abt-img {
+  position: relative;
+ 
   display: block;
   border-radius:50%;
 }
 
 .block {
-  height: 150px;
+  height: 210px;
+  margin-top: 40px;
 }
+
+
+
 
 
 /*End of About Page */
