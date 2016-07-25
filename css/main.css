@@ -59,8 +59,10 @@ h3#header-subheading {
     border-bottom: none;
 }
 .nav.nav-tabs li {
-	    	padding: 0% 6.84% 0% 6.84%;
+	    	width: 20%;
+    text-align: center;
 }
+
 .nav-tabs.main a {
 	color:#3dbeb9;
 }
