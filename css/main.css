@@ -434,7 +434,7 @@ color: #3dbeb9 !important;
 
 /*Blog Page */
 
-.row {
+#blog-content .row {
     margin-left: 20%;
     margin-right: 5%;
 }
