@@ -433,6 +433,27 @@ color: #3dbeb9 !important;
   margin-top: 40px;
 }
 
+.intro-explan {
+    color: #3dbeb9;
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.intro-explan span {
+    color: #fdacab;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+#kat-span.active {
+  font-weight: 800;
+
+}
+
+#kat-img img.active{
+border: 5px solid #fdacab;
+}
+
 
 /*End of About Page */
 

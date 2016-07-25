@@ -177,3 +177,55 @@ var answers = allQuestions[Object.keys(allQuestions)[curr]];
 
 };
 //QUIZ END
+
+// About page begin
+
+// Highlights who Kat is
+
+$('#kat-span').hover(function() {
+  $('#kat-img img').toggleClass('active');
+  $('#kat-span').toggleClass('active');
+})
+
+$('#kat-img').hover(function() {
+  $('#kat-span').toggleClass('active');
+  $('#kat-img img').toggleClass('active');
+})
+
+// Highlights who Aarti is
+
+$('#aarti-span').hover(function() {
+  $('#aarti-img img').toggleClass('active');
+  $('#aarti-span').toggleClass('active');
+})
+
+$('#aarti-img').hover(function() {
+  $('#aarti-span').toggleClass('active');
+  $('#aarti-img img').toggleClass('active');
+})
+
+// Highlights who Philippa is
+
+$('#philippa-span').hover(function() {
+  $('#philippa-img img').toggleClass('active');
+  $('#philippa-span').toggleClass('active');
+})
+
+$('#philippa-img').hover(function() {
+  $('#philippa-span').toggleClass('active');
+  $('#philippa-img img').toggleClass('active');
+})
+
+// Highlights who Disha is
+
+$('#disha-span').hover(function() {
+  $('#disha-img img').toggleClass('active');
+  $('#disha-span').toggleClass('active');
+})
+
+$('#disha-img').hover(function() {
+  $('#disha-span').toggleClass('active');
+  $('#disha-img img').toggleClass('active');
+})
+
+// About page end
