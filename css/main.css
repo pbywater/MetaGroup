@@ -446,12 +446,39 @@ color: #3dbeb9 !important;
 }
 
 #kat-span.active {
-  font-weight: 800;
+  font-weight: 600;
 
 }
 
 #kat-img img.active{
 border: 5px solid #fdacab;
+}
+
+#aarti-span.active {
+  font-weight: 600;
+
+}
+
+#aarti-img img.active{
+border: 5px solid #3dbeb9;
+}
+
+#philippa-span.active {
+  font-weight: 600;
+
+}
+
+#philippa-img img.active{
+border: 5px solid #fdacab;
+}
+
+#disha-span.active {
+  font-weight: 600;
+
+}
+
+#disha-img img.active{
+border: 5px solid #3dbeb9;
 }
 
 
