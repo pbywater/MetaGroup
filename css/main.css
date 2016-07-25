@@ -482,27 +482,6 @@ a:hover {
 }
 
 
-@media only screen and (max-width: 384px) {
-  #blog-content {
-    margin-left: 150px;
-  }
-}
-@media only screen and (min-width: 385px) {
-  #blog-content {
-    margin-left: 130px;
-  }
-}
-@media only screen and (min-width: 783px) {
-  #blog-content {
-    margin-left: 60px;
-  }
-}
-@media only screen and (min-width: 1068px) {
-  #blog-content {
-    margin-left: 0px;
-  }
-}
-
 /*End of Blog page */
 
 /* Thank you Pages */
@@ -608,49 +587,6 @@ a:hover {
     bottom: 20px;
   }
 }
-
-/*@media only screen and (max-width: 600px) {
-  #main_content {
-    margin-left: 200px;
-  }
-}
-@media only screen and (min-width: 600px) {
-  #main_content {
-    margin-left: 200px;
-  }
-}
-@media only screen and (min-width: 770px) {
-  #main_content {
-    margin-left: 150px;
-  }
-}
-@media only screen and (min-width: 790px) {
-  #main_content {
-    margin-left: 100px;
-  }
-}
-@media only screen and (min-width: 885px) {
-  #main_content {
-    margin-left: 90px;
-  }
-}
-@media only screen and (min-width: 1160px) {
-  #main_content {
-    margin-left: 60px;
-  }
-}
-@media only screen and (min-width: 1370px) {
-  #main_content {
-    margin-left: 20px;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  #main_content {
-    margin-left: 0px;
-  }
-}*/
-
-
 
 
 
