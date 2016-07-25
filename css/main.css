@@ -26,6 +26,7 @@ h3#header-subheading {
 }
 .explanation {
   color: #3dbeb9;
+  font-size: 16px;
 }
 
 /* SOCIAL ICONS IN FOOTER */
@@ -142,6 +143,7 @@ h3#header-subheading {
 .hvr-shutter-out-horizontal.other:before {
   background: #3dbeb9;
 }
+
 
 /* END OF NAVBAR */
 
@@ -480,6 +482,7 @@ border: 5px solid #fdacab;
 #disha-img img.active{
 border: 5px solid #3dbeb9;
 }
+
 
 
 /*End of About Page */
