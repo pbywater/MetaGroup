@@ -407,6 +407,7 @@ color: #3dbeb9 !important;
   }
 }
 /* End of animation */
+/* END OF BACK TO TOP BUTTON */
 
 /*About Page*/
 
@@ -592,12 +593,6 @@ a:hover {
 
 /* Media Rules for mobile optimisation */
 
-@media only screen and (min-width: 768px) {
-  .cd-top {
-    right: 20px;
-    bottom: 20px;
-  }
-}
 @media only screen and (min-width: 1024px) {
   .cd-top {
     height: 60px;
@@ -607,7 +602,14 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+/*@media only screen and (max-width: 600px) {
   #main_content {
     margin-left: 200px;
   }
@@ -646,44 +648,10 @@ a:hover {
   #main_content {
     margin-left: 0px;
   }
-}
-
-/*@media only screen and (max-width: 612px) {
-  #main_content{
-  margin-left: 40%;
-}
-}
-@media only screen and (min-width: 610px) {
-  #main_content{
-  margin-left: 30%;
-}
-}
-@media only screen and (min-width: 750px) {
-  #main_content{
-  margin-left: 25%;
-}
-}
-@media only screen and (min-width: 780px) {
-  #main_content{
-  margin-left: 15%;
-}
-}
-@media only screen and (min-width: 890px) {
-  #main_content{
-  margin-left: 5%;
-}
-}
-@media only screen and (min-width: 990px) {
-  #main_content{
-  margin-left: 10%;
-}
-}
-@media only screen and (min-width: 1150px) {
-  #main_content{
-  margin-left: 0;
-}
 }*/
 
-/* END OF BACK TO TOP BUTTON */
+
+
+
 
 
