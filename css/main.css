@@ -480,6 +480,28 @@ a:hover {
   color: #3dbeb9;
 }
 
+
+@media only screen and (max-width: 384px) {
+  #blog-content {
+    margin-left: 150px;
+  }
+}
+@media only screen and (min-width: 385px) {
+  #blog-content {
+    margin-left: 130px;
+  }
+}
+@media only screen and (min-width: 783px) {
+  #blog-content {
+    margin-left: 60px;
+  }
+}
+@media only screen and (min-width: 1068px) {
+  #blog-content {
+    margin-left: 0px;
+  }
+}
+
 /*End of Blog page */
 
 /* Thank you Pages */
