@@ -52,6 +52,7 @@ opacity: 0.5;
 #contact-form input[type=button], input[type=submit], input[type=reset] {
     background-color: #fdacab;
     border-radius: 5px;
+    border: 1px solid #fdacab;
     color: white;
     padding: 2% 2%;
     text-decoration: none;
@@ -60,12 +61,14 @@ opacity: 0.5;
     width:30%;
     font-size:18px;
     display: inline-block;
+    box-shadow: none;
 }
 .wrapper {
   text-align: center;
 }
 #contact-form .sub-btn:hover{
   background-color: #3dbeb9;
+  border: 1px solid #3dbeb9;
 }
 
 /* END OF CONTACT FORM */
@@ -129,7 +132,8 @@ opacity: 0.5;
 /*Submit Button*/ 
 #newsletter-form input[type=button], input[type=submit], input[type=reset] {
     background-color: #fdacab;
-    border-radius: 5px;
+    border-radius: 5px #fdacab;
+    border: 1px solid;
     color: white;
     padding: 2% 2%;
     text-decoration: none;
@@ -138,9 +142,11 @@ opacity: 0.5;
     width:30%;
     font-size:18px;
     display: inline-block;
+
 }
 #newsletter-form .sub-btn:hover{
   background-color: #3dbeb9;
+  border: 1px solid #3dbeb9;
 }
 
 
