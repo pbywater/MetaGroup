@@ -482,6 +482,20 @@ a:hover {
 
 /*End of Blog page */
 
+/* Thank you Pages */
+.thankyou a {
+  text-decoration: none;
+  color: #3dbeb9;
+}
+.thankyou a:hover {
+  color: #fdacab;
+}
+.thankyou{
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+/* End of Thank You Pages */
+
 /* QUIZ*/
 
 .wrapper {
