@@ -76,11 +76,12 @@ h3#header-subheading {
     color: white;
     border-radius:0px;
 }
+
 .nav.main>li>a:focus, .nav.main>li>a:hover {
-   border: 1px solid #fdacab;
+   border: none;
 }
 .nav.other>li>a:focus, .nav.other>li>a:hover {
-   border: 1px solid #3dbeb9;
+   border: none;
 }
 
 #active>a {
