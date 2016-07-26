@@ -181,6 +181,9 @@ opacity: 0.5;
     #news-footer{
       display: none !important;
     }
+    #languages-sm{
+      display: none !important;
+    }
    /* #main_content{
         margin-left: 90px;
     }*/
