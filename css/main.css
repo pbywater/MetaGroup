@@ -208,6 +208,7 @@ nav > ul#other-nav > li:hover >a {
 }
 #other-nav ul.drop-menu li:hover {
   background: rgba(61, 190, 185, 0.9);
+  font-weight: bold;
 }
 #other-nav .hvr-shutter-out-horizontal:before {
   background: #3dbeb9;
