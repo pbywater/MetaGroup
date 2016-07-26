@@ -688,4 +688,12 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 650px) {
+  .abt-img {
+    padding: 0px;
+  }
+
+}
+
+
 
