@@ -195,9 +195,6 @@ nav > ul#home-nav > li:hover >a {
   background: #3dbeb9;
 }
 
-#home-nav #active-res{
-  color: #3dbeb9;
-}
 /* OTHER NAV */
 nav > ul#other-nav > li>a {
   color: #fdacab;
@@ -221,6 +218,10 @@ nav > ul#other-nav > li:hover >a {
 
 #other-nav #active-res{
   color: #fdacab;
+  font-weight: bold;
+}
+#other-nav a:hover > #active-res{
+  color: white;
 }
 
 
