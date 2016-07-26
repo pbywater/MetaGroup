@@ -144,20 +144,22 @@ h3#header-subheading {
 /* Shutter Out Horizontal Home */
 .main .hvr-shutter-out-horizontal:before {
   background: #fdacab;
+    border-radius: 0 0 10px 10px;
 }
 
 /* Shutter Out Horizontal Other Pages */
 .other .hvr-shutter-out-horizontal:before {
   background: #3dbeb9;
+    border-radius: 0 0 10px 10px;
 }
 
 /*Drop down menu */
 #drop-menu{
-  background-color: #fdacab;
-  opacity: 0.8;
+  background-color: #3dbeb9;
   border-radius: 0 0 10px 10px;
-  position: fixed;
+  /*position: fixed;*/
   width: 100%;
+  z-index: 300;
 }
 #drop-menu li{
   display: none;
@@ -172,7 +174,7 @@ h3#header-subheading {
   
 }
 #drop-menu li:hover a{
-  color: #3dbeb9;
+  color: #fdacab;
 }
 li:hover > #drop-menu li{
   display: block;
