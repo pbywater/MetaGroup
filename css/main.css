@@ -352,11 +352,11 @@ color: #3dbeb9 !important;
   opacity: .5;
 }
 .cd-top-other:hover {
-  background-color:  #3dbeb9;
+  background-color:  #309894;
   opacity: 1;
 }
 .cd-top-home:hover {
-  background-color:  #fdacab;
+  background-color:  #CA8988;
   opacity: 1;
 }
 /* Back to top button animation - moves up and down */
@@ -571,7 +571,7 @@ a:hover {
 }
 
 #quiz {
-  background-color: #3dbeb9;
+  background-color: #fdacab;
   padding-bottom: 20px;
   width: 100%;
   border-radius: 2%;
@@ -586,7 +586,7 @@ a:hover {
   border-top: 10px solid #FFFFFF;
   border-bottom: 10px solid #FFFFFF;
   padding: 20px;
-  background-color: #fdacab;
+  background-color: #3dbeb9;
 }
 
 .answers div {
@@ -596,52 +596,38 @@ a:hover {
 
 .answers div:hover {
   cursor: pointer;
-  color: ;
+  color: #3dbeb9;
 }
 /*adds in hovering different colour when selected */ 
 
 .answers {
   padding: 0px 0 10px 0px;
 }
-/*adds in space between anwsers and correct*/
+/*adds in space between ansers and correct*/
 
 .checker {
   display: inline-block;
-  width: 300px;
-  margin:auto;
-  padding: auto;
+  width: 200px;
+  margin: 0 auto;
 }
 
 
 .correct, .false {
+  background-color: #109D59;
   width: 50px;
   height: 40px;
-  line-height: 40px;
+  line-height: 20px;
   float: left;
   margin-left: 10px;
   font-size: 20px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  width: 10%;
 }
 /*adds in correct answer colour */
 
-.correct {
-  background-color:green;
-}
-
-/* adds in incorrect answer colour */
 .false {
-  background-color: red;
+  background-color: #DC4437;
 }
+/* adds in incorrect answer colour */
 
-.hidden>div {
-  display:none;
-}
-
-.visible>div {
-  display:block;
-}
 /* END OF QUIZ */
 
 
