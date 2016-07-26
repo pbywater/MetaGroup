@@ -66,28 +66,28 @@
       </nav>
     </div>
     <!-- END OF LEFT NAV BAR - NEWSLETTER FORM -->
-
-    <div class="col-sm-11">
-      <div id="main_content">
+    <div id="main_content">
+      <div class="col-sm-11">
+        
         <h2 class='intro'>
           Who are we?
         </h2>
-     <div class='block'>
-        <div id='kat-img' class= "col-sm-3 abt-img">
-          <img src='img/Kat.jpg'/>
+        <div class='block'>
+          <div id='kat-img' class= "col-sm-3 abt-img">
+            <img src='img/Kat.jpg'/>
 
-      </div> 
+          </div> 
           <div id='aarti-img' class= "col-sm-3 abt-img">
-          <img src='img/Aarti.jpg'/>
-      </div> 
+            <img src='img/Aarti.jpg'/>
+          </div> 
           <div id='philippa-img' class= "col-sm-3 abt-img">
-          <img src='img/Philippa.jpg'/>
-      </div> 
+            <img src='img/Philippa.jpg'/>
+          </div> 
           <div id='disha-img' class= "col-sm-3 abt-img">
-          <img src='img/disha.jpg'/>
-      </div> 
-    </div>
-  
+            <img src='img/disha.jpg'/>
+          </div> 
+        </div>
+        
 
         <div class='intro-explan'>
           <p>
@@ -109,67 +109,80 @@
      </div>
 
 
-   <h2 class='intro'>
-    <a name="contact-us"></a>Contact Us
-  </h2>
+     <h2 class='intro'>
+      <a name="contact-us"></a>Contact Us
+    </h2>
 
 
 
-  <div class='explanation'>
-    <p>
-     If you have any questions you'd like to ask us, or just want to say hi, we'd love to hear from you! Fill in the form below and we'll get back to you when we can.
-   </p>
+    <div class='explanation'>
+      <p>
+       If you have any questions you'd like to ask us, or just want to say hi, we'd love to hear from you! Fill in the form below and we'll get back to you when we can.
+     </p>
 
 
 
- </div>
- <br />
- <!-- CONTACT FORM -->
-
- <div id="contact-form">
-
-   <form name="htmlform" method="post" action="thank-you.html" autocomplete="on">
-
-     <label for="title">title</label>    
-     <p><select name="title" title="Please select a title." required="">
-       <option disabled selected value> -- select an option -- </option>
-       <option value="miss">Miss</option>
-       <option value="mrs">Mrs</option>
-       <option value="mr">Mr</option>
-       <option value="ms">Ms</option>
-       <option value="sir">Sir</option>
-       <option value="dr">Dr</option>
-       <option value="lady">Lady</option>
-       <option value="lord">Lord</option>
-       <option value="other">Other</option>
-     </select></p>
-
-     <label for="forname">forename</label>
-     <p><textarea rows='1' class="name" type="text" name="fname" placeholder="&#xf007;" minlength="2" maxlength="50" size="30" onkeypress="return isAlphaKey(event)" required></textarea></p>
-     
-     <label for="surname">surname</label>
-     <p><textarea rows='1' class="name" type="text" name="lname" placeholder="&#xf0c0;" minlength="2" maxlength="50" onkeypress="return isAlphaKey(event)" required></textarea></p>
-     
-     <label for="email">email address</label>
-     <p><textarea rows='1' class="name" type="email" name="email" maxlength="80" placeholder="&#xf0e0; name@example.com" required></textarea></p>
-
-     <label for="tel">telephone number (optional)</label>
-     <p><textarea  rows='1' class="name" type="text" name="tel" minlength="11" maxlength="13" placeholder="&#xf095; +44xxxxxxxxxx" onkeypress="return isNumberKey(event)" required></textarea></p>
-
-     <label for="msg">your message</label>
-     <p><textarea id="msg" class="name form-control" name="comments" placeholder="&#xf075; Say hello..." maxlength="500" rows="8" required></textarea><h6 id="count_message">500 characters remaining</h6></p>
-
-     <div class="wrapper">
-       <input class="sub-btn" type="submit" value="Submit"> </div>
-     </form>
    </div>
+   <br />
+   <!-- CONTACT FORM -->
+
+   <div id="contact-form">
+
+     <form name="htmlform" method="post" action="thank-you.html" autocomplete="on">
+
+       <label for="title">title</label>    
+       <p><select name="title" title="Please select a title." required="">
+         <option disabled selected value> -- select an option -- </option>
+         <option value="miss">Miss</option>
+         <option value="mrs">Mrs</option>
+         <option value="mr">Mr</option>
+         <option value="ms">Ms</option>
+         <option value="sir">Sir</option>
+         <option value="dr">Dr</option>
+         <option value="lady">Lady</option>
+         <option value="lord">Lord</option>
+         <option value="other">Other</option>
+       </select></p>
+
+       <label for="forname">forename</label>
+       <p><textarea rows='1' class="name" type="text" name="fname" placeholder="&#xf007;" minlength="2" maxlength="50" size="30" onkeypress="return isAlphaKey(event)" required></textarea></p>
+       
+       <label for="surname">surname</label>
+       <p><textarea rows='1' class="name" type="text" name="lname" placeholder="&#xf0c0;" minlength="2" maxlength="50" onkeypress="return isAlphaKey(event)" required></textarea></p>
+       
+       <label for="email">email address</label>
+       <p><textarea rows='1' class="name" type="email" name="email" maxlength="80" placeholder="&#xf0e0; name@example.com" required></textarea></p>
+
+       <label for="tel">telephone number (optional)</label>
+       <p><textarea  rows='1' class="name" type="text" name="tel" minlength="11" maxlength="13" placeholder="&#xf095; +44xxxxxxxxxx" onkeypress="return isNumberKey(event)" required></textarea></p>
+
+       <label for="msg">your message</label>
+       <p><textarea id="msg" class="name form-control" name="comments" placeholder="&#xf075; Say hello..." maxlength="500" rows="8" required></textarea><h6 id="count_message">500 characters remaining</h6></p>
+
+       <div class="wrapper">
+         <input class="sub-btn" type="submit" value="Submit"> </div>
+       </form>
+     </div>
 
 
+   </div>
  </div>
-</div>
 
 
 </div>
+
+<!-- Small Screen Newsletter Form -->
+<div class="newsletter-form row" id="news-footer">
+  <div class="col-sm-12 col-xs-12">
+    <h3 id="news-title-footer">Newsletter</h3>
+    <form name="htmlform_newsletter" method="post" action="newsletter-sub.html" autocomplete="on">
+      <p><textarea rows='1' class="name" type="text" name="name" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="12" onkeypress="return isAlphaKey(event)" required></textarea></p>
+      <p><textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; Email" maxlength="80" required></textarea></p>
+      <input class="sub-btn" type="submit" value="Subscribe!">
+    </form>
+  </div>
+</div>
+<!-- End of small screen newsletter form -->
 
 <!-- FOOTER -->
 <footer class="footer footer-other">

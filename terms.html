@@ -63,9 +63,9 @@
 			</nav>
 		</div>
 		<!-- END OF LEFT NAV BAR - NEWSLETTER FORM -->
-
+		<!-- MAIN CONTENT -->
+		<div id="main_content">
 		<div class="col-sm-11">
-			<div id="main_content">
 				<h2 class='intro'>
 					Gvianeonvqo
 				</h2>
@@ -100,8 +100,21 @@
 
 			</div>
 		</div>
+		<!-- END OF MAIN CONTENT -->
 	</div>
 
+	<!-- Small Screen Newsletter Form -->
+	<div class="newsletter-form row" id="news-footer">
+		<div class="col-sm-12 col-xs-12">
+			<h3 id="news-title-footer">Newsletter</h3>
+			<form name="htmlform_newsletter" method="post" action="newsletter-sub.html" autocomplete="on">
+				<p><textarea rows='1' class="name" type="text" name="name" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="12" onkeypress="return isAlphaKey(event)" required></textarea></p>
+				<p><textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; Email" maxlength="80" required></textarea></p>
+				<input class="sub-btn" type="submit" value="Subscribe!">
+			</form>
+		</div>
+	</div>
+	<!-- End of small screen newsletter form -->
 
 	<!-- FOOTER -->
 	<footer class="footer footer-other">
