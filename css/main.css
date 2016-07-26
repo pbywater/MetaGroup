@@ -92,10 +92,10 @@ nav > ul > li:hover {
   background: white;
 }
 .nav>li>a:focus, .nav>li>a:hover {
-    text-decoration: none;
-    background-color: transparent;
-    color: white;
-    border-radius:0px;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  border-radius:0px;
 }
 
 #active>a , #active-res{
@@ -151,7 +151,7 @@ a:hover > #active-res{
   transform: scaleX(1);
 }
 
- 
+
 /* DROP DOWN MENU */
 ul.drop-menu {
   position: absolute;
@@ -174,7 +174,6 @@ li:hover > ul.drop-menu li {
 }
 
 /* HOME NAV */
-
 nav > ul#home-nav > li>a {
   color: #3dbeb9;
 }
@@ -225,7 +224,6 @@ nav > ul#other-nav > li:hover >a {
   color: white;
 }
 
-
 /* Dropdown Animation for fade in */
 li:hover > ul.drop-menu {
   -webkit-perspective:1000px;
@@ -242,27 +240,34 @@ li:hover > ul.drop-menu a li{
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;*/
 }
+
+/* keyframes used to change opacity, rotation & translation during the animation */
 @-webkit-keyframes drop-menu {
+  /* start of animation properties*/
   0% {
     opacity: 0;
     transform: rotateY(-90deg) translateY(30px);
   }
+  /* end of animation properties */
   100% {
     opacity: 1;
     transform: rotateY(0deg) translateY(0px);
   }
 }
 @keyframes drop-menu {
+  /* start of animation properties */
   0% {
     opacity: 0;
     transform: rotateY(-90deg) translateY(30px);
   }
+  /* end of animation properties */
   100% {
     opacity: 1;
     transform: rotateY(0deg) translateY(0px);
   }
 }
-
+/* Increases the animation duration as the dropdown list goes down*/
+/* DOne using nth-child(i)*/
 li:hover > ul.drop-menu a:nth-child(1) li{
   -webkit-animation-name: drop-menu;
   animation-name: drop-menu;
@@ -323,7 +328,7 @@ li:hover > ul.drop-menu a:nth-child(6) li{
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-
+/* End of animation */
 
 
 
@@ -406,11 +411,11 @@ li:hover > ul.drop-menu a:nth-child(6) li{
   -webkit-transform: translateY(-10px);
   transform: translateY(-10px);
 }
-  /* Social Icons on Home Page */
+/* Social Icons on Home Page */
 .footer-main .social-icon .fa:hover{
   color: #3dbeb9;
 }
-  /* Social Icons on Other Pages */
+/* Social Icons on Other Pages */
 .footer-other .social-icon .fa:hover{
   color: #fdacab;
 }
@@ -421,7 +426,7 @@ li:hover > ul.drop-menu a:nth-child(6) li{
   margin: 0 auto;
 }
 
-  /*Search Bar on Home Page */
+/*Search Bar on Home Page */
 
 .footer-main .input-group-btn>button {
   background-color: #3dbeb9;
@@ -436,19 +441,19 @@ li:hover > ul.drop-menu a:nth-child(6) li{
 
 /* Placeholder Color - Home */
 .footer-main input::-webkit-input-placeholder {
-color: #fdacab !important;
+  color: #fdacab !important;
 }
 .footer-main input:-moz-placeholder { /* Firefox 18- */
-color: #fdacab !important;  
+  color: #fdacab !important;  
 }
 .footer-main input::-moz-placeholder {  /* Firefox 19+ */
-color: #fdacab !important;  
+  color: #fdacab !important;  
 }
 .footer-main input:-ms-input-placeholder {  
-color: #fdacab !important;  
+  color: #fdacab !important;  
 }
 
-  /*Search Bar on Other Pages */  
+/*Search Bar on Other Pages */  
 
 .footer-other .input-group-btn>button {
   background-color: #fdacab;
@@ -463,16 +468,16 @@ color: #fdacab !important;
 
 /* Placeholder Color - Other */
 .footer-other input::-webkit-input-placeholder {
-color: #3dbeb9 !important;
+  color: #3dbeb9 !important;
 }
 .footer-other input:-moz-placeholder { /* Firefox 18- */
-color: #3dbeb9 !important;  
+  color: #3dbeb9 !important;  
 }
 .footer-other input::-moz-placeholder {  /* Firefox 19+ */
-color: #3dbeb9 !important;  
+  color: #3dbeb9 !important;  
 }
 .footer-other input:-ms-input-placeholder {  
-color: #3dbeb9 !important;  
+  color: #3dbeb9 !important;  
 }
 
 /* END OF SEARCH BAR */
@@ -503,13 +508,13 @@ color: #3dbeb9 !important;
   transition: opacity .3s 0s, visibility 0s .3s;
 }
 .cd-top-home {
-/*Button color for home*/
-/*Either pick 0.8 transparent pink: rgba(253, 172, 171, 0.8)  OR 0.8 transparent blue: rgba(61, 190, 185, 0.8); */
+  /*Button color for home*/
+  /*Either pick 0.8 transparent pink: rgba(253, 172, 171, 0.8)  OR 0.8 transparent blue: rgba(61, 190, 185, 0.8); */
   background: rgba(61, 190, 185, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
 }
 .cd-top-other {
-/*Button color for all pages except home*/
-/*Either pick 0.8 transparent pink: rgba(253, 172, 171, 0.8)  OR 0.8 transparent blue: rgba(61, 190, 185, 0.8); */
+  /*Button color for all pages except home*/
+  /*Either pick 0.8 transparent pink: rgba(253, 172, 171, 0.8)  OR 0.8 transparent blue: rgba(61, 190, 185, 0.8); */
   background: rgba(253, 172, 171, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
 }
 .cd-top.cd-is-visible, .cd-top.cd-fade-out, .cd-top:hover {
@@ -607,7 +612,7 @@ color: #3dbeb9 !important;
 
 .abt-img {
   position: relative;
- 
+
   display: block;
   border-radius:50%;
 }
@@ -618,15 +623,15 @@ color: #3dbeb9 !important;
 }
 
 .intro-explan {
-    color: #3dbeb9;
-    font-size: 22px;
-    font-weight: 200;
+  color: #3dbeb9;
+  font-size: 22px;
+  font-weight: 200;
 }
 
 .intro-explan span {
-    color: #fdacab;
-    font-size: 26px;
-    font-weight: 300;
+  color: #fdacab;
+  font-size: 26px;
+  font-weight: 300;
 }
 
 #kat-span.active {
@@ -635,7 +640,7 @@ color: #3dbeb9 !important;
 }
 
 #kat-img img.active{
-border: 5px solid #fdacab;
+  border: 5px solid #fdacab;
 }
 
 #aarti-span.active {
@@ -644,7 +649,7 @@ border: 5px solid #fdacab;
 }
 
 #aarti-img img.active{
-border: 5px solid #3dbeb9;
+  border: 5px solid #3dbeb9;
 }
 
 #philippa-span.active {
@@ -653,7 +658,7 @@ border: 5px solid #3dbeb9;
 }
 
 #philippa-img img.active{
-border: 5px solid #fdacab;
+  border: 5px solid #fdacab;
 }
 
 #disha-span.active {
@@ -662,7 +667,7 @@ border: 5px solid #fdacab;
 }
 
 #disha-img img.active{
-border: 5px solid #3dbeb9;
+  border: 5px solid #3dbeb9;
 }
 
 
@@ -673,21 +678,21 @@ border: 5px solid #3dbeb9;
 /*Blog Page */
 
 #blog-content .row {
-    margin-left: 20%;
-    margin-right: 5%;
+  margin-left: 20%;
+  margin-right: 5%;
 }
 
 
 
 .post-box {
-    display: block;
-    margin: 0 -6px 18px;
+  display: block;
+  margin: 0 -6px 18px;
 }
 
 figure img {
-    width: 100%;
-    opacity: 0.8;
-    border-radius: 4% 4% 0% 0%;
+  width: 100%;
+  opacity: 0.8;
+  border-radius: 4% 4% 0% 0%;
 }
 
 .post-box:hover figure img {
@@ -696,12 +701,12 @@ figure img {
 
 .post-box {
   border: 5px solid #fdacab;
-    border-radius: 5%;
+  border-radius: 5%;
 }
 
 .post-box:hover  {
-border: 5px solid #3dbeb9;
-    border-radius: 5%;
+  border: 5px solid #3dbeb9;
+  border-radius: 5%;
 }
 
 a:hover {
@@ -709,8 +714,8 @@ a:hover {
 }
 
 .category {
-    font-weight: 300;
-    font-size: 25px;
+  font-weight: 300;
+  font-size: 25px;
 }
 
 .post-box p {
@@ -737,101 +742,30 @@ a:hover {
 }
 /* End of Thank You Pages */
 
-/* QUIZ*/
-
-.wrapper {
-  text-align:center;
-  position:100vh;
-  margin: auto 10px;
-  height: 100%;
-  padding-top: 0px;
-  padding-bottom:20px;
-}
-
-#quiz {
-  background-color: #fdacab;
-  padding-bottom: 20px;
-  width: 100%;
-  border-radius: 2%;
-  color: #fff;
-  text-align: center;
-  padding-top: 5px;
-}
-
-.questions {
-  font-size: 40px;
-  font-weight: 700;
-  border-top: 10px solid #FFFFFF;
-  border-bottom: 10px solid #FFFFFF;
-  padding: 20px;
-  background-color: #3dbeb9;
-}
-
-.answers div {
-  padding: 10px 0 0 0;
-  font-size: 25px;
-}
-
-.answers div:hover {
-  cursor: pointer;
-  color: #3dbeb9;
-}
-/*adds in hovering different colour when selected */ 
-
-.answers {
-  padding: 0px 0 10px 0px;
-}
-/*adds in space between ansers and correct*/
-
-.checker {
-  display: inline-block;
-  width: 200px;
-  margin: 0 auto;
-}
-
-
-.correct, .false {
-  background-color: #109D59;
-  width: 50px;
-  height: 40px;
-  line-height: 20px;
-  float: left;
-  margin-left: 10px;
-  font-size: 20px;
-}
-/*adds in correct answer colour */
-
-.false {
-  background-color: #DC4437;
-}
-/* adds in incorrect answer colour */
-
-/* END OF QUIZ */
-
 
 /* Media Rules for mobile optimisation */
 
 @media only screen and (min-width: 1200px) {
 
-.container {
+  .container {
     width: 75%;
     margin-left: 15%;
-}
+  }
 
 }
 
 @media only screen and (max-width: 1200px) {
 
-.container {
+  .container {
     width: 75%;
     margin-left: 15%;
-}
+  }
 
 }
 
 @media only screen and (max-width: 1076px) {
 
-.block {
+  .block {
     height: 160px;
   }
 
@@ -881,25 +815,25 @@ a:hover {
 
 @media only screen and (max-width: 900px) {
 
-.block {
+  .block {
     height: 100px;
     margin-top: 3%;
-}
+  }
 
 }
 
 @media only screen and (max-width: 750px) {
 
-#blog-content .row {
+  #blog-content .row {
     margin-left: 10%;
     margin-right: 10%;
-}
+  }
 
-.container {
+  .container {
     width: 85%;
     margin-left: 5%;
     margin-right: 5%;
-}
+  }
 
 }
 
@@ -928,7 +862,7 @@ a:hover {
     margin-left: 2%;
     margin-right: 2%;
     
-}
+  }
 
 }
 
