@@ -1,6 +1,6 @@
 /* CONTACT FORM on About Page */
 
-  /* Titles */
+/* Titles */
 #contact-form label{
   font-weight: bold;
   font-size: 18px;
@@ -22,25 +22,25 @@
   background-color: white;
 }
 #contact-form textarea:focus , #contact-form textarea:hover , #contact-form select:focus , #contact-form select:hover{
-    border: 3px solid #3dbeb9;
+  border: 3px solid #3dbeb9;
 }
 
 /* Placeholder Color */
 #contact-form textarea::-webkit-input-placeholder , input::-webkit-input-placeholder {
-color: #3dbeb9 !important;
-opacity: 0.5;
+  color: #3dbeb9 !important;
+  opacity: 0.5;
 }
 #contact-form textarea:-moz-placeholder , input:-moz-placeholder{ /* Firefox 18- */
-color: #3dbeb9 !important; 
-opacity: 0.5; 
+  color: #3dbeb9 !important; 
+  opacity: 0.5; 
 }
 #contact-form textarea::-moz-placeholder , input::-moz-placeholder {  /* Firefox 19+ */
-color: #3dbeb9 !important;
-opacity: 0.5;  
+  color: #3dbeb9 !important;
+  opacity: 0.5;  
 }
 #contact-form textarea:-ms-input-placeholder , input:-ms-input-placeholder {  
-color: #3dbeb9 !important; 
-opacity: 0.5; 
+  color: #3dbeb9 !important; 
+  opacity: 0.5; 
 }
 
 /* Characters remaining message */
@@ -48,20 +48,20 @@ opacity: 0.5;
   text-align: right;
 }
 
- /*Submit Button*/ 
+/*Submit Button*/ 
 #contact-form input[type=button], input[type=submit], input[type=reset] {
-    background-color: #fdacab;
-    border-radius: 5px;
-    border: 1px solid #fdacab;
-    color: white;
-    padding: 2% 2%;
-    text-decoration: none;
-    margin: 3%;
-    cursor: pointer;
-    width:30%;
-    font-size:18px;
-    display: inline-block;
-    box-shadow: none;
+  background-color: #fdacab;
+  border-radius: 5px;
+  border: 1px solid #fdacab;
+  color: white;
+  padding: 2% 2%;
+  text-decoration: none;
+  margin: 3%;
+  cursor: pointer;
+  width:30%;
+  font-size:18px;
+  display: inline-block;
+  box-shadow: none;
 }
 .wrapper {
   text-align: center;
@@ -88,9 +88,7 @@ opacity: 0.5;
   color: #fdacab;
   width: 400px;
   margin-left: 0;
-
 }
-
 #left_nav div {
   display: block;
 }
@@ -98,13 +96,12 @@ opacity: 0.5;
   display: block;
 }
 
-/*Newsletter Home */
+/*Newsletter Navbar Home */
 #news-title-home{
   margin-bottom: 10px;
   color: #3dbeb9;
   position: relative;
   left: 0px;
-  
 }
 .newsletter-form.home textarea{
   width:40%;
@@ -116,45 +113,45 @@ opacity: 0.5;
   background-color: white;
 }
 .newsletter-form.home textarea:focus , #newsletter-form textarea:hover{
-    border: 3px solid #fdacab;
+  border: 3px solid #fdacab;
 }
-/* Placeholder Color */
+/* newsletter home Placeholder Color */
 .newsletter-form.home textarea::-webkit-input-placeholder , input::-webkit-input-placeholder {
-color: #fdacab !important;
-opacity: 0.5;
+  color: #fdacab !important;
+  opacity: 0.5;
 }
 .newsletter-form.home textarea:-moz-placeholder , input:-moz-placeholder{ /* Firefox 18- */
-color: #fdacab !important; 
-opacity: 0.5; 
+  color: #fdacab !important; 
+  opacity: 0.5; 
 }
 .newsletter-form.home textarea::-moz-placeholder , input::-moz-placeholder {  /* Firefox 19+ */
-color: #fdacab !important;
-opacity: 0.5;  
+  color: #fdacab !important;
+  opacity: 0.5;  
 }
 .newsletter-form.home textarea:-ms-input-placeholder , input:-ms-input-placeholder {  
-color: #fdacab !important; 
-opacity: 0.5; 
+  color: #fdacab !important; 
+  opacity: 0.5; 
 }
-/*Submit Button*/ 
+/*Newsletter Navabr Home Submit Button*/ 
 .newsletter-form.home input[type=button], .newsletter-form.home input[type=submit], .newsletter-form.home input[type=reset] {
-    background-color: #3dbeb9;
-    border-radius: 5px #3dbeb9;
-    border: 1px solid;
-    color: white;
-    padding: 2% 2%;
-    text-decoration: none;
-    margin: 1% 4%;
-    cursor: pointer;
-    width:30%;
-    font-size:18px;
-    display: inline-block;
+  background-color: #3dbeb9;
+  border-radius: 5px #3dbeb9;
+  border: 1px solid;
+  color: white;
+  padding: 2% 2%;
+  text-decoration: none;
+  margin: 1% 4%;
+  cursor: pointer;
+  width:30%;
+  font-size:18px;
+  display: inline-block;
 }
 .newsletter-form.home .sub-btn:hover{
   background-color: #fdacab;
   border: 1px solid #fdacab;
 }
-/* End of Newsletter Home */
-/* Newsletter other */
+/* End of Newsletter Navbar Home */
+/* Newsletter navbar other */
 #news-title{
   margin-bottom: 10px;
   color: #fdacab;
@@ -171,41 +168,40 @@ opacity: 0.5;
   background-color: white;
 }
 .newsletter-form textarea:focus , #newsletter-form textarea:hover{
-    border: 3px solid #3dbeb9;
+  border: 3px solid #3dbeb9;
 }
 
-/* Placeholder Color */
+/* newsletter other Placeholder Color */
 .newsletter-form textarea::-webkit-input-placeholder , input::-webkit-input-placeholder {
-color: #3dbeb9 !important;
-opacity: 0.5;
+  color: #3dbeb9 !important;
+  opacity: 0.5;
 }
 .newsletter-form textarea:-moz-placeholder , input:-moz-placeholder{ /* Firefox 18- */
-color: #3dbeb9 !important; 
-opacity: 0.5; 
+  color: #3dbeb9 !important; 
+  opacity: 0.5; 
 }
 .newsletter-form textarea::-moz-placeholder , input::-moz-placeholder {  /* Firefox 19+ */
-color: #3dbeb9 !important;
-opacity: 0.5;  
+  color: #3dbeb9 !important;
+  opacity: 0.5;  
 }
 .newsletter-form textarea:-ms-input-placeholder , input:-ms-input-placeholder {  
-color: #3dbeb9 !important; 
-opacity: 0.5; 
+  color: #3dbeb9 !important; 
+  opacity: 0.5; 
 }
 
-
-/*Submit Button*/ 
+/*newsletter other Submit Button*/ 
 .newsletter-form input[type=button], input[type=submit], input[type=reset] {
-    background-color: #fdacab;
-    border-radius: 5px #fdacab;
-    border: 1px solid;
-    color: white;
-    padding: 2% 2%;
-    text-decoration: none;
-    margin: 1% 4%;
-    cursor: pointer;
-    width:30%;
-    font-size:18px;
-    display: inline-block;
+  background-color: #fdacab;
+  border-radius: 5px #fdacab;
+  border: 1px solid;
+  color: white;
+  padding: 2% 2%;
+  text-decoration: none;
+  margin: 1% 4%;
+  cursor: pointer;
+  width:30%;
+  font-size:18px;
+  display: inline-block;
 }
 .newsletter-form .sub-btn:hover{
   background-color: #3dbeb9;
@@ -229,47 +225,33 @@ opacity: 0.5;
 #news-hide , #news-hide-footer{
   display: none;
 }
-
 .home #news-title-footer{
   margin-bottom: 10px;
   color: #3dbeb9;
 }
 /* End of Footer Newsletter */
 
-    
+
 @media screen and (max-width: 768px) {
-    /* Hide left nav newletter form on small screens */
-    .news{
-        display: none !important;
-    }
-/*    #main_content {
-      margin-left: 10px;
-      margin-right: 10px;
-    }*/
+  /* Hide left nav newletter form on small screens */
+  .news{
+    display: none !important;
+  }
 }
 
 @media screen and (min-width: 769px) {
-    /* Hide Footer Newsletter on large screens */
-    #news-footer{
-      display: none !important;
-    }
-    #languages-sm{
-      display: none !important;
-    }
-   /* #main_content{
-        margin-left: 90px;
-    }*/
-    
+  /* Hide Footer Newsletter on large screens */
+  #news-footer{
+    display: none !important;
+  }
+  #languages-sm{
+    display: none !important;
+  }
 }
 
-/*@media screen and (min-width: 900px) {
-    #main_content{
-        margin-left: 90px;
-    }*/
+@media screen and (max-width: 430px) {
 
-    @media screen and (max-width: 430px) {
-
-    #contact-form form {
+  #contact-form form {
     margin: 0px ;
     width: 100%;
 
