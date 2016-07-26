@@ -200,6 +200,9 @@ nav > ul#home-nav > li:hover >a {
 }
 
 /* Dropdown Animation for fade in */
+li:hover > ul.drop-menu {
+  perspective:1000px;
+}
 li:hover > ul.drop-menu li{
   opacity: 0;
   -webkit-animation-name: drop-menu;
@@ -215,17 +218,21 @@ li:hover > ul.drop-menu li{
 @-webkit-keyframes drop-menu {
   0% {
     opacity: 0;
+    transform: rotateY(-90deg) translateY(30px);
   }
   100% {
     opacity: 1;
+    transform: rotateY(0deg) translateY(0px);
   }
 }
 @keyframes drop-menu {
   0% {
     opacity: 0;
+    transform: rotateY(-90deg) translateY(30px);
   }
   100% {
     opacity: 1;
+    transform: rotateY(0deg) translateY(0px);
   }
 }
 
