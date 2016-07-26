@@ -70,7 +70,11 @@ opacity: 0.5;
   background-color: #3dbeb9;
   border: 1px solid #3dbeb9;
 }
-
+#contact-news{
+  text-align: center;
+  margin: 0 auto;
+  width: 5%;
+}
 /* END OF CONTACT FORM */
 
 /* SOCIAL RIGHT NAVBAR */
