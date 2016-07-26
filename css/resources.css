@@ -78,6 +78,7 @@
   background-color: #3dbeb9;
   width: 35%;
   border-radius: 20%;
+  margin-left: 120px;
 }
 
 #languages a {
@@ -90,6 +91,7 @@
 #languages {
   margin-top: -5px;
   padding-top: 0;
+
 }
 /* Languages menu on small screen */
 #languages-sm{

@@ -80,11 +80,13 @@ opacity: 0.5;
 /* SOCIAL RIGHT NAVBAR */
 #left_nav {
   position:fixed;
-  left:1%;
+  left:-110px;
   margin-top: -14px;
   font-family: 'roboto';
   color: #fdacab;
-  width: 450px;
+  width: 400px;
+  margin-left: 0;
+
 }
 
 #left_nav div {
@@ -99,7 +101,8 @@ opacity: 0.5;
   margin-bottom: 10px;
   color: #3dbeb9;
   position: relative;
-  left: 6%;
+  left: 0px;
+  
 }
 .newsletter-form.home textarea{
   width:40%;
@@ -154,7 +157,7 @@ opacity: 0.5;
   margin-bottom: 10px;
   color: #fdacab;
   position: relative;
-  left: 6%;
+  left: 0px;
 }
 .newsletter-form textarea{
   width:40%;
