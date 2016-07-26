@@ -65,6 +65,7 @@ opacity: 0.5;
 }
 .wrapper {
   text-align: center;
+  margin-top: 20px;
 }
 #contact-form .sub-btn:hover{
   background-color: #3dbeb9;
@@ -72,7 +73,7 @@ opacity: 0.5;
 }
 #contact-news{
   text-align: center;
-  margin: 20px auto;
+  margin: 10px auto;
   width: 5%;
   /*margin-bottom: px;*/
 }
