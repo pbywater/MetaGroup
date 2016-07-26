@@ -72,8 +72,9 @@ opacity: 0.5;
 }
 #contact-news{
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto;
   width: 5%;
+  /*margin-bottom: px;*/
 }
 /* END OF CONTACT FORM */
 
