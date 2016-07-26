@@ -75,12 +75,17 @@ nav > ul {
 nav > ul > li {
   float: left;
   width: 20%;
-  height: 65px;
+  height: 40px;
   line-height: 65px;
   position: relative;
   z-index: 300;
   text-transform: uppercase;
   cursor: pointer;
+}
+nav>ul>li>a {
+  height: 40px;
+  margin-top: -20px;
+  padding: 0;
 }
 
 nav > ul > li:hover {
