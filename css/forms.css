@@ -87,18 +87,74 @@ opacity: 0.5;
   width: 450px;
 }
 
-#news-title{
-  margin-bottom: 10px;
-  color: #fdacab;
-  position: relative;
-  left: 6%;
-}
-
 #left_nav div {
   display: block;
 }
 #left_nav form {
   display: block;
+}
+
+/*Newsletter Home */
+#news-title-home{
+  margin-bottom: 10px;
+  color: #3dbeb9;
+  position: relative;
+  left: 6%;
+}
+.newsletter-form.home textarea{
+  width:40%;
+  padding: 2% 2%;
+  border: 2px solid #fdacab;
+  border-radius: 5px;
+  text-align:left;
+  color: #fdacab;
+  background-color: white;
+}
+.newsletter-form.home textarea:focus , #newsletter-form textarea:hover{
+    border: 3px solid #fdacab;
+}
+/* Placeholder Color */
+.newsletter-form.home textarea::-webkit-input-placeholder , input::-webkit-input-placeholder {
+color: #fdacab !important;
+opacity: 0.5;
+}
+.newsletter-form.home textarea:-moz-placeholder , input:-moz-placeholder{ /* Firefox 18- */
+color: #fdacab !important; 
+opacity: 0.5; 
+}
+.newsletter-form.home textarea::-moz-placeholder , input::-moz-placeholder {  /* Firefox 19+ */
+color: #fdacab !important;
+opacity: 0.5;  
+}
+.newsletter-form.home textarea:-ms-input-placeholder , input:-ms-input-placeholder {  
+color: #fdacab !important; 
+opacity: 0.5; 
+}
+/*Submit Button*/ 
+.newsletter-form.home input[type=button], .newsletter-form.home input[type=submit], .newsletter-form.home input[type=reset] {
+    background-color: #3dbeb9;
+    border-radius: 5px #3dbeb9;
+    border: 1px solid;
+    color: white;
+    padding: 2% 2%;
+    text-decoration: none;
+    margin: 1% 4%;
+    cursor: pointer;
+    width:30%;
+    font-size:18px;
+    display: inline-block;
+}
+.newsletter-form.home .sub-btn:hover{
+  background-color: #fdacab;
+  border: 1px solid #fdacab;
+}
+/* End of Newsletter Home */
+/* Newsletter other */
+#news-title{
+  margin-bottom: 10px;
+  color: #fdacab;
+  position: relative;
+  left: 6%;
 }
 .newsletter-form textarea{
   width:40%;
@@ -145,13 +201,12 @@ opacity: 0.5;
     width:30%;
     font-size:18px;
     display: inline-block;
-
 }
 .newsletter-form .sub-btn:hover{
   background-color: #3dbeb9;
   border: 1px solid #3dbeb9;
 }
-
+/* End of newsletter other */
 /* Footer Newsletter */
 /* Centers form on page */
 #news-footer>div{
@@ -168,6 +223,11 @@ opacity: 0.5;
 }
 #news-hide , #news-hide-footer{
   display: none;
+}
+
+.home #news-title-footer{
+  margin-bottom: 10px;
+  color: #3dbeb9;
 }
 /* End of Footer Newsletter */
 
