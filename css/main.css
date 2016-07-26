@@ -142,12 +142,12 @@ h3#header-subheading {
 }
 
 /* Shutter Out Horizontal Home */
-.hvr-shutter-out-horizontal.main:before {
+.main .hvr-shutter-out-horizontal:before {
   background: #fdacab;
 }
 
 /* Shutter Out Horizontal Other Pages */
-.hvr-shutter-out-horizontal.other:before {
+.other .hvr-shutter-out-horizontal:before {
   background: #3dbeb9;
 }
 
