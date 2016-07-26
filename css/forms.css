@@ -166,6 +166,9 @@ opacity: 0.5;
   margin-bottom: 10px;
   color: #fdacab;
 }
+#news-hide , #news-hide-footer{
+  display: none;
+}
 /* End of Footer Newsletter */
 
     
