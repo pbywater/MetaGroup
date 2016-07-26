@@ -192,7 +192,7 @@ nav > ul#home-nav > li:hover >a {
   background: #fdacab;
 }
 #home-nav .drop.hvr-shutter-out-horizontal:before {
-  background: #3dbeb9;
+  background: rgba(61, 190, 185, 0.5);
 }
 
 /* OTHER NAV */
@@ -213,7 +213,7 @@ nav > ul#other-nav > li:hover >a {
   background: #3dbeb9;
 }
 #other-nav .drop.hvr-shutter-out-horizontal:before {
-  background: #fdacab;
+  background: rgba(253, 172, 171, 0.7);
 }
 
 #other-nav #active-res{
