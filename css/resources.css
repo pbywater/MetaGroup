@@ -77,10 +77,6 @@
   border-radius: 20%;
 }
 
-#languages #active-l a {
-  font-weight: bold;
-  color: #fdacab;
-}
 #languages a {
   text-decoration: none;
   color: white;
