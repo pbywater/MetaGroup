@@ -201,4 +201,12 @@ opacity: 0.5;
     #main_content{
         margin-left: 90px;
     }*/
+
+    @media screen and (max-width: 430px) {
+
+    #contact-form form {
+    margin: 0px ;
+    width: 100%;
+
+  }
 /* END OF SOCIAL RIGHT NAVBAR */

@@ -466,7 +466,7 @@ color: #3dbeb9 !important;
 }
 
 .block {
-  height: 210px;
+  height: 190px;
   margin-top: 40px;
 }
 
@@ -518,9 +518,7 @@ border: 5px solid #fdacab;
 border: 5px solid #3dbeb9;
 }
 
-#main-content {
- float:right;
-}
+
 
 
 /*End of About Page */
@@ -684,6 +682,14 @@ a:hover {
 
 }
 
+@media only screen and (max-width: 1076px) {
+
+.block {
+    height: 160px;
+  }
+
+}
+
 @media only screen and (min-width: 1024px) {
   .cd-top {
     height: 60px;
@@ -726,6 +732,15 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 900px) {
+
+.block {
+    height: 100px;
+    margin-top: 3%;
+}
+
+}
+
 @media only screen and (max-width: 750px) {
 
 #blog-content .row {
@@ -743,10 +758,30 @@ a:hover {
 
 @media only screen and (max-width: 650px) {
   .abt-img {
-    padding: 3px;
+    padding: 0px;
   }
 
 }
 
+@media only screen and (max-width: 430px) {
+  .block {
+    height: 80px;
+  }
 
+  p {
+    font-size: 16px;
+  }
+
+  .intro-explan span {
+    font-size: 20px;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+}
+
+}
 
