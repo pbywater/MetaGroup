@@ -518,6 +518,9 @@ border: 5px solid #fdacab;
 border: 5px solid #3dbeb9;
 }
 
+#main-content {
+ float:right;
+}
 
 
 /*End of About Page */
@@ -528,6 +531,8 @@ border: 5px solid #3dbeb9;
     margin-left: 20%;
     margin-right: 5%;
 }
+
+
 
 .post-box {
     display: block;
@@ -677,6 +682,21 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 990px) {
+  .block {
+    height: 190px;
+  }
+
+}
+
+@media only screen and (max-width: 980px) {
+  .block {
+    height: 150px;
+  }
+
+}
+
+
 @media only screen and (max-width: 930px) {
   .abt-img {
     width: 20%;
@@ -684,13 +704,15 @@ a:hover {
   }
 
   .block {
-    height: 100px;
+    height: 120px;
   }
 }
 
+
+
 @media only screen and (max-width: 650px) {
   .abt-img {
-    padding: 0px;
+    padding: 3px;
   }
 
 }
