@@ -96,8 +96,7 @@ opacity: 0.5;
 #left_nav form {
   display: block;
 }
-
-#newsletter-form textarea{
+.newsletter-form textarea{
   width:40%;
   padding: 2% 2%;
   border: 2px solid #3dbeb9;
@@ -106,31 +105,31 @@ opacity: 0.5;
   color: #3dbeb9;
   background-color: white;
 }
-#newsletter-form textarea:focus , #newsletter-form textarea:hover{
+.newsletter-form textarea:focus , #newsletter-form textarea:hover{
     border: 3px solid #3dbeb9;
 }
 
 /* Placeholder Color */
-#newsletter-form textarea::-webkit-input-placeholder , input::-webkit-input-placeholder {
+.newsletter-form textarea::-webkit-input-placeholder , input::-webkit-input-placeholder {
 color: #3dbeb9 !important;
 opacity: 0.5;
 }
-#newsletter-form textarea:-moz-placeholder , input:-moz-placeholder{ /* Firefox 18- */
+.newsletter-form textarea:-moz-placeholder , input:-moz-placeholder{ /* Firefox 18- */
 color: #3dbeb9 !important; 
 opacity: 0.5; 
 }
-#newsletter-form textarea::-moz-placeholder , input::-moz-placeholder {  /* Firefox 19+ */
+.newsletter-form textarea::-moz-placeholder , input::-moz-placeholder {  /* Firefox 19+ */
 color: #3dbeb9 !important;
 opacity: 0.5;  
 }
-#newsletter-form textarea:-ms-input-placeholder , input:-ms-input-placeholder {  
+.newsletter-form textarea:-ms-input-placeholder , input:-ms-input-placeholder {  
 color: #3dbeb9 !important; 
 opacity: 0.5; 
 }
 
 
 /*Submit Button*/ 
-#newsletter-form input[type=button], input[type=submit], input[type=reset] {
+.newsletter-form input[type=button], input[type=submit], input[type=reset] {
     background-color: #fdacab;
     border-radius: 5px #fdacab;
     border: 1px solid;
@@ -144,32 +143,52 @@ opacity: 0.5;
     display: inline-block;
 
 }
-#newsletter-form .sub-btn:hover{
+.newsletter-form .sub-btn:hover{
   background-color: #3dbeb9;
   border: 1px solid #3dbeb9;
 }
 
+/* Footer Newsletter */
+/* Centers form on page */
+#news-footer>div{
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+#news-footer{
+  margin: 0 auto;
+}
+#news-title-footer{
+  margin-bottom: 10px;
+  color: #fdacab;
+}
+/* End of Footer Newsletter */
+
     
 @media screen and (max-width: 768px) {
+    /* Hide left nav newletter form on small screens */
     .news{
         display: none !important;
-
     }
-    #main_content {
+/*    #main_content {
       margin-left: 10px;
       margin-right: 10px;
-    }
+    }*/
 }
 
 @media screen and (min-width: 769px) {
-    #main_content{
-        margin-left: 90px;
+    /* Hide Footer Newsletter on large screens */
+    #news-footer{
+      display: none !important;
     }
+   /* #main_content{
+        margin-left: 90px;
+    }*/
     
 }
 
-@media screen and (min-width: 900px) {
+/*@media screen and (min-width: 900px) {
     #main_content{
         margin-left: 90px;
-    }
+    }*/
 /* END OF SOCIAL RIGHT NAVBAR */
