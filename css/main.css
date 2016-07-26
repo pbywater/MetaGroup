@@ -151,6 +151,34 @@ h3#header-subheading {
   background: #3dbeb9;
 }
 
+/*Drop down menu */
+#drop-menu{
+  background-color: #fdacab;
+  opacity: 0.8;
+  border-radius: 0 0 10px 10px;
+  position: fixed;
+  width: 100%;
+}
+#drop-menu li{
+  display: none;
+  text-decoration: none;
+  list-style: none;
+  font-size: 16px;
+  text-align: center;
+  margin-left: -12%;
+}
+#drop-menu li a{
+  color: white;
+  
+}
+#drop-menu li:hover a{
+  color: #3dbeb9;
+}
+li:hover > #drop-menu li{
+  display: block;
+  width: 100%;
+  
+}
 
 /* END OF NAVBAR */
 
