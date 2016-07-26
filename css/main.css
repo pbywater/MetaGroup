@@ -182,11 +182,11 @@ nav > ul#home-nav > li:hover >a {
   color: white;
 }
 #home-nav ul.drop-menu li {
-  background: rgba(253, 172, 171, 0.7);
+  background: rgba(253, 172, 171, 0.9);
   color: rgba(255, 255, 255, 0.7);
 }
 #home-nav ul.drop-menu li:hover {
-  background: rgba(253, 172, 171, 0.7);
+  background: rgba(253, 172, 171, 0.9);
 }
 #home-nav .hvr-shutter-out-horizontal:before {
   background: #fdacab;
@@ -198,22 +198,47 @@ nav > ul#home-nav > li:hover >a {
 #home-nav #active-res{
   color: #3dbeb9;
 }
+/* OTHER NAV */
+nav > ul#other-nav > li>a {
+  color: #fdacab;
+}
+nav > ul#other-nav > li:hover >a {
+  color: white;
+}
+#other-nav ul.drop-menu li {
+  background: rgba(61, 190, 185, 0.9);
+  color: rgba(255, 255, 255, 0.7);
+}
+#other-nav ul.drop-menu li:hover {
+  background: rgba(61, 190, 185, 0.9);
+}
+#other-nav .hvr-shutter-out-horizontal:before {
+  background: #3dbeb9;
+}
+#other-nav .drop.hvr-shutter-out-horizontal:before {
+  background: #fdacab;
+}
+
+#other-nav #active-res{
+  color: #fdacab;
+}
+
 
 /* Dropdown Animation for fade in */
 li:hover > ul.drop-menu {
+  -webkit-perspective:1000px;
   perspective:1000px;
 }
-li:hover > ul.drop-menu li{
+li:hover > ul.drop-menu a li{
   opacity: 0;
-  -webkit-animation-name: drop-menu;
+/*  -webkit-animation-name: drop-menu;
   animation-name: drop-menu;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-
+  animation-fill-mode: forwards;*/
 }
 @-webkit-keyframes drop-menu {
   0% {
@@ -236,31 +261,68 @@ li:hover > ul.drop-menu li{
   }
 }
 
+li:hover > ul.drop-menu a:nth-child(1) li{
+  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu a:nth-child(2) li{
+  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 600ms;
+  animation-duration: 600ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu a:nth-child(3) li{
+  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 900ms;
+  animation-duration: 900ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu a:nth-child(4) li{
+  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 1200ms;
+  animation-duration: 1200ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu a:nth-child(5) li{
+  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 1500ms;
+  animation-duration: 1500ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu a:nth-child(6) li{
+  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 1800ms;
+  animation-duration: 1800ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
 
-/* OTHER NAV */
-nav > ul#other-nav > li>a {
-  color: #fdacab;
-}
-nav > ul#other-nav > li:hover >a {
-  color: white;
-}
-#other-nav ul.drop-menu li {
-  background: rgba(61, 190, 185, 0.7);
-  color: rgba(255, 255, 255, 0.7);
-}
-#other-nav ul.drop-menu li:hover {
-  background: rgba(61, 190, 185, 0.7);
-}
-#other-nav .hvr-shutter-out-horizontal:before {
-  background: #3dbeb9;
-}
-#other-nav .drop.hvr-shutter-out-horizontal:before {
-  background: #fdacab;
-}
 
-#other-nav #active-res{
-  color: #fdacab;
-}
 
 
 /* END OF NAVBAR */
