@@ -82,9 +82,7 @@ nav > ul > li {
   text-transform: uppercase;
   cursor: pointer;
 }
-nav > ul > li>a {
-  color: #fdacab;
-}
+
 nav > ul > li:hover {
   background: white;
 }
@@ -99,9 +97,6 @@ nav > ul > li:hover {
   font-weight: bold;
 }
 
-#active-res{
-  color: #fdacab;
-}
 a:hover > #active-res{
   color: white;
 }
@@ -150,12 +145,7 @@ a:hover > #active-res{
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-.hvr-shutter-out-horizontal:before {
-  background: #3dbeb9;
-}
-.drop.hvr-shutter-out-horizontal:before {
-  background: #fdacab;
-}
+
  
 /* DROP DOWN MENU */
 ul.drop-menu {
@@ -165,13 +155,7 @@ ul.drop-menu {
   width: 100%;
   padding: 0;
 }
-ul.drop-menu li {
-  background: rgba(61, 190, 185, 0.7);
-  color: rgba(255, 255, 255, 0.7);
-}
-ul.drop-menu li:hover {
-  background: rgba(61, 190, 185, 0.7);
-}
+
 ul.drop-menu a:last-child li {
   border-radius: 0px 0px 5px 5px;
 }
@@ -183,6 +167,59 @@ ul.drop-menu li {
 li:hover > ul.drop-menu li {
   display: block;
 }
+
+/* HOME NAV */
+
+nav > ul#home-nav > li>a {
+  color: #3dbeb9;
+}
+nav > ul#home-nav > li:hover >a {
+  color: white;
+}
+#home-nav ul.drop-menu li {
+  background: rgba(253, 172, 171, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+}
+#home-nav ul.drop-menu li:hover {
+  background: rgba(253, 172, 171, 0.7);
+}
+#home-nav .hvr-shutter-out-horizontal:before {
+  background: #fdacab;
+}
+#home-nav .drop.hvr-shutter-out-horizontal:before {
+  background: #3dbeb9;
+}
+
+#home-nav #active-res{
+  color: #3dbeb9;
+}
+
+
+/* OTHER NAV */
+nav > ul#other-nav > li>a {
+  color: #fdacab;
+}
+nav > ul#other-nav > li:hover >a {
+  color: white;
+}
+#other-nav ul.drop-menu li {
+  background: rgba(61, 190, 185, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+}
+#other-nav ul.drop-menu li:hover {
+  background: rgba(61, 190, 185, 0.7);
+}
+#other-nav .hvr-shutter-out-horizontal:before {
+  background: #3dbeb9;
+}
+#other-nav .drop.hvr-shutter-out-horizontal:before {
+  background: #fdacab;
+}
+
+#other-nav #active-res{
+  color: #fdacab;
+}
+
 
 /* END OF NAVBAR */
 
