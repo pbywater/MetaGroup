@@ -28,7 +28,12 @@ h3#header-subheading {
   color: #3dbeb9;
   font-size: 16px;
 }
-
+.explanation a{
+  color: #3dbeb9; 
+}
+.explanation a:hover{
+  color:#fdacab;
+}
 /* SOCIAL ICONS IN FOOTER */
 .social-icon .fa:hover{
   font-size: 330%;
