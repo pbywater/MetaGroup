@@ -85,10 +85,19 @@ window.onload = function () {
         'what does css stand for? ' : ['Cascading style sheets', 'classy style sheets', 'clear styling shapes', 0],
         
         'What type of language is HTML? ' : ['A programming language', 'A markup language' , 'A machine learning language', 1],
+
+        'What would this code do? <a href="http://www.facebook.com">facebook</a> ' : ['link to facebook', 'insert facebooks logo', 'close facebook', 0],
         
-        'Which are these is NOT a python built in function? ' : ['len()', 'raw_input()', 'clear()', 2]
+        'Which are these is NOT a python built in function? ' : ['len()', 'raw_input()', 'clear()', 2],
+
+        'What gets printed? x = 4.5 y = 2 print x//y ' : ['2.0', '9.0', '20.25', 0],
+
+        'What is the output of print list[0] if list = [ abcd, 786 , 2.23, john, 70.2 ]? ' : ['abcd', 'Error', '[ abcd, 786 , 2.23, john, 70.2 ]', 0],
+
+        'Which is not a python loop?' : ['for loop', 'while loop', 'iter loop', 2]
       };
       
+
   function loadQuestion(curr) {
   // This function loads all the question into the questionArea
   // It grabs the current question based on the 'current'-variable
@@ -174,7 +183,6 @@ var answers = allQuestions[Object.keys(allQuestions)[curr]];
   loadQuestion(current);
   loadAnswers(current);
   // Starts the quiz
-
 };
 //QUIZ END
 
