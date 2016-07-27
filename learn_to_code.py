@@ -13,11 +13,11 @@ def contact_us_message(to, first_name, msg):
         auth=("api", MAILGUN_API_KEY),
         files = [("attachment", open("attachments/example.txt")), ("inline", open("static/img/favicon2.png"))],
         data={
-            "from": "Vegan Panda <mailgun@%s>" % MAILGUN_DOMAIN,
+            "from": "Learn To Code <mailgun@%s>" % MAILGUN_DOMAIN,
             "to": to,
             "subject": "Thank you for contacting us!",
             "text": "Hi %s!" % first_name.split(' ').pop(0),
-            'html': '<html>Hi %s! <strong>Thank you</strong> for ... Inline image here: <img src="cid:favicon2.png"> .</html>' % first_name.split(' ').pop(0)
+            'html': '<html>Hi %s! <strong>Thank you</strong> for contacting us. Someone will be back to you within 24 hours. In the meantime, why not check out our blog posts, coding resources or quiz for your coding essentials. <br /><img src="cid:favicon2.png"> </html>' % first_name.split(' ').pop(0)
         })
 
 """Contact Us - Add to mail list"""        
@@ -38,11 +38,11 @@ def subscription_message_contact(to, first_name):
         auth=("api", MAILGUN_API_KEY),
         files = [("attachment", open("attachments/example.txt")), ("inline", open("static/img/favicon2.png"))],
         data={
-            "from": "Vegan Panda <mailgun@%s>" % MAILGUN_DOMAIN,
+            "from": "Learn To Code <mailgun@%s>" % MAILGUN_DOMAIN,
             "to": to,
             "subject": "Welcome %s!" % first_name.split(' ').pop(0),
             "text": "Hi %s!" % first_name.split(' ').pop(0),
-            'html': '<html> Hi %s! <strong>content</strong>. Thank you for subscribing to our newsletter... Inline image here: <img src="cid:happy_panda.png">. <br /> If you wish to unsubscribe, click </html>' % first_name.split(' ').pop(0)
+            'html': '<html> Hi %s! <strong>content</strong>. Thank you for subscribing to our newsletter. <br /> <br /> <img src="cid:favicon2.png">. <br /> <br /> If you wish to unsubscribe, click here.</html>' % first_name.split(' ').pop(0)
         })
 
 """Newsletter Subscription from contact form - Add to mail list"""
@@ -64,13 +64,13 @@ def subscription_message(to, full_name):
     return requests.post(
         "https://api.mailgun.net/v3/%s/messages" % MAILGUN_DOMAIN, 
         auth=("api", MAILGUN_API_KEY),
-        files = [("attachment", open("attachments/example.txt")), ("inline", open("static/images/happy_panda.png"))],
+        files = [("attachment", open("attachments/example.txt")), ("inline", open("static/img/favicon2.png"))],
         data={
-            "from": "Vegan Panda <mailgun@%s>" % MAILGUN_DOMAIN,
+            "from": "Learn To Code <mailgun@%s>" % MAILGUN_DOMAIN,
             "to": to,
             "subject": "Welcome %s!" % full_name.split(' ').pop(0),
             "text": "Hi %s!" % full_name.split(' ').pop(0),
-            'html': '<html> Hi %s! <strong>content</strong>. Thank you for subscribing to our newsletter... Inline image here: <img src="cid:happy_panda.png">. <br /> If you wish to unsubscribe, click </html>' % full_name.split(' ').pop(0)
+            'html': '<html> Hi %s! <strong>content</strong>. Thank you for subscribing to our newsletter. <br /> <br /> <img src="cid:favicon2.png">. <br /> If you wish to unsubscribe, click </html>' % full_name.split(' ').pop(0)
         })
 
 """Newsletter Subscription - Add to mail list"""
@@ -99,6 +99,10 @@ def about():
 @app.route("/thank-you.html")
 def thank_you():
     return render_template("thank-you.html")
+
+@app.route("/newsletter-sub.html")
+def thank_you_news():
+    return render_template("newsletter-sub.html")
     
 @app.route("/blog.html")
 def blog():
