@@ -42,8 +42,9 @@
 
 .checker {
   display: inline-block;
-  width: 200px;
-  margin: 0 auto;
+  width: 300px;
+  margin: auto;
+  padding: auto;
 }
 .correct, .false {
   background-color: #109D59;
