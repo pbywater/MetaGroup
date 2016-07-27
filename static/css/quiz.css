@@ -53,6 +53,9 @@
   float: left;
   margin-left: 10px;
   font-size: 20px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  width: 10%;
 }
 /*adds in correct answer colour */
 
