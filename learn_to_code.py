@@ -101,7 +101,7 @@ def thank_you():
     return render_template("thank-you.html")
 
 @app.route("/newsletter-sub.html")
-def thank_you_news():
+def news_thanks():
     return render_template("newsletter-sub.html")
     
 @app.route("/blog.html")
@@ -170,7 +170,7 @@ def contact_msg():
     return render_template("thank-you.html")
 
 @app.route("/newsletter-sub.html", methods=['GET', 'POST'])
-def sign_up():
+def sign_up_news():
     form_data = request.form
     full_name = request.form.get('fname')
     to = request.form.get('email')
