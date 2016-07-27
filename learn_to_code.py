@@ -17,7 +17,7 @@ def contact_us_message(to, first_name, msg):
             "to": to,
             "subject": "Thank you for contacting us!",
             "text": "Hi %s!" % first_name.split(' ').pop(0),
-            'html': '<html>Hi %s! <strong>Thank you</strong> for contacting us. Someone will be back to you within 24 hours. In the meantime, why not check out our blog posts, coding resources or quiz for your coding essentials. <br /><img src="cid:favicon2.png"> </html>' % first_name.split(' ').pop(0)
+            'html': '<html>Hi %s! <strong>Thank you</strong> for contacting us. Someone will be back to you within 24 hours. In the meantime, why not check out our blog posts, coding resources or quiz for your coding essentials. <br /> Your message: <br /> %s <br /><br /> <img src="cid:favicon2.png"> </html>' % (first_name.split(' ').pop(0) , msg)
         })
 
 """Contact Us - Add to mail list"""        
@@ -42,7 +42,7 @@ def subscription_message_contact(to, first_name):
             "to": to,
             "subject": "Welcome %s!" % first_name.split(' ').pop(0),
             "text": "Hi %s!" % first_name.split(' ').pop(0),
-            'html': '<html> Hi %s! <strong>content</strong>. Thank you for subscribing to our newsletter. <br /> <br /> <img src="cid:favicon2.png">. <br /> <br /> If you wish to unsubscribe, click here.</html>' % first_name.split(' ').pop(0)
+            'html': '<html> Hi <strong>%s</strong>!. Thank you for subscribing to our newsletter. <br /> <br /> <img src="cid:favicon2.png">. <br /> <br /> If you wish to unsubscribe, click here.</html>' % first_name.split(' ').pop(0)
         })
 
 """Newsletter Subscription from contact form - Add to mail list"""
@@ -161,7 +161,7 @@ def contact_msg():
     last_name = request.form.get('lname')
     to = request.form.get('email')
     tel = request.form.get('tel')
-    msg = request.form.get('msg')
+    msg = request.form.get('comments')
     contact_us_message(to, first_name, msg)
     contact_message(to, first_name, last_name, tel, msg)
     if request.form.get('sub'):
@@ -172,7 +172,7 @@ def contact_msg():
 @app.route("/newsletter-sub.html", methods=['GET', 'POST'])
 def sign_up():
     form_data = request.form
-    full_name = request.form.get('name')
+    full_name = request.form.get('fname')
     to = request.form.get('email')
     subscription_message(to, full_name)
     add_list_member(to, full_name)
