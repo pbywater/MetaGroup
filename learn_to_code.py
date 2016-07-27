@@ -11,13 +11,13 @@ def contact_us_message(to, first_name, msg):
     return requests.post(
         "https://api.mailgun.net/v3/%s/messages" % MAILGUN_DOMAIN, 
         auth=("api", MAILGUN_API_KEY),
-        files = [("attachment", open("attachments/example.txt")), ("inline", open("static/images/happy_panda.png"))],
+        files = [("attachment", open("attachments/example.txt")), ("inline", open("static/img/favicon2.png"))],
         data={
             "from": "Vegan Panda <mailgun@%s>" % MAILGUN_DOMAIN,
             "to": to,
             "subject": "Thank you for contacting us!",
             "text": "Hi %s!" % first_name.split(' ').pop(0),
-            'html': '<html>Hi %s! <strong>Thank you</strong> for ... Inline image here: <img src="cid:happy_panda.png"> .</html>' % first_name.split(' ').pop(0)
+            'html': '<html>Hi %s! <strong>Thank you</strong> for ... Inline image here: <img src="cid:favicon2.png"> .</html>' % first_name.split(' ').pop(0)
         })
 
 """Contact Us - Add to mail list"""        
@@ -27,7 +27,7 @@ def contact_message(to, first_name, last_name, tel, msg):
         auth=('api', MAILGUN_API_KEY),
         data={'subscribed': True,
               'address': to,
-              'name': first_name + last_name,
+              'name': first_name + ' ' + last_name,
               'description': 'Contact Us Message',
               'vars': '{"telephone": "%s" , "comment": "%s"}' % (tel, msg)})
 
@@ -36,7 +36,7 @@ def subscription_message_contact(to, first_name):
     return requests.post(
         "https://api.mailgun.net/v3/%s/messages" % MAILGUN_DOMAIN, 
         auth=("api", MAILGUN_API_KEY),
-        files = [("attachment", open("attachments/example.txt")), ("inline", open("static/images/happy_panda.png"))],
+        files = [("attachment", open("attachments/example.txt")), ("inline", open("static/img/favicon2.png"))],
         data={
             "from": "Vegan Panda <mailgun@%s>" % MAILGUN_DOMAIN,
             "to": to,
@@ -52,7 +52,7 @@ def add_list_member_contact(to, first_name, last_name, tel):
         auth=('api', MAILGUN_API_KEY),
         data={'subscribed': True,
               'address': to,
-              'name': first_name + last_name,
+              'name': first_name + ' ' + last_name,
               'description': 'Newsletter Subscriber',
               'vars': '{"telephone": "%s"}' % tel})
              
