@@ -2,52 +2,56 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="js/jquery.js"></script>
+<!-- CSS & JS FOR SITE WITH PYTHON/FLASK -->
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<!-- Forms css file -->
-	<link rel="stylesheet" type="text/css" href="css/forms.css">
+	<!-- Main CSS -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+	<!-- Forms CSS -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/forms.css') }}">
 
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}"></script>
 
 	<!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script src='js/main.js'></script>
+
+	<!-- fotorama.css & fotorama.js. -->
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css') }}">
+<!-- END OF CSS & JS FOR SITE WITH PYTHON -->
 	
+	<script async="" src="//www.google-analytics.com/analytics.js"></script>
 	<!-- Font Package: Roboto -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,900italic,900,700italic,700,500italic,500' rel='stylesheet' type='text/css'>
 
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-
-	<title>Blog - Learn to Code</title>
+	<title>Terms - Learn to Code</title>
 	<!-- Favicon -->
-	<link rel="icon" href="favicon4.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon"> 
+	<link rel="icon" href="{{ url_for('static', filename='favicon4.ico') }}" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon"> 
 
 </head>
 
 <body>
 	<!-- TITLE -->
 	<div class='jumbotron blog'>
-		<h1 id='header-title'> Blog
+		<h1 id='header-title'> Terms
 		</h1>
 		<h3 id='header-subheading'>Resources and Help for Coders
 		</h3>
 	</div>
-
 	<!-- NAVBAR -->	
 	<nav>
 		<ul class="nav" id="other-nav">
 			<li class='hvr-shutter-out-horizontal' role="presentation"><a href="index.html">Home</a>
 			</li>
 			<li class='hvr-shutter-out-horizontal' role="presentation"><a href="about.html">About</a>
-				<ul class="drop-menu">
-					<a href="about.html#contact-us"><li class='hvr-shutter-out-horizontal drop' role="presentation">Contact</li></a>
-				</ul>
 			</li>
-			<li id="active" class='hvr-shutter-out-horizontal' role="presentation"><a href="blog.html">Blog</a>
+			<li class='hvr-shutter-out-horizontal' role="presentation"><a href="blog.html">Blog</a>
 			</li>
 			<li class='hvr-shutter-out-horizontal' role="presentation"><a href="resources.html">Resources</a>
 				<ul class="drop-menu">
@@ -76,190 +80,42 @@
 					<form name="htmlform_newsletter" method="post" action="newsletter-sub.html" autocomplete="on">
 						<p><textarea rows='1' class="name" type="text" name="fname" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="12" onkeypress="return isAlphaKey(event)" required></textarea></p>
 						<p><textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; Email" maxlength="80" required></textarea></p>
-						<label for="surname"></label>
 						<input class="sub-btn" type="submit" value="Subscribe">
 						<p id="news-hide"><textarea rows='1' class="name" type="email" name="email" maxlength="80" placeholder="&#xf0e0; name@example.com" required></textarea></p>
 					</form>
 				</div>
 			</nav>
 		</div>
-	</div>
-	<!-- END OF LEFT NAV BAR - NEWSLETTER FORM -->
+		<!-- END OF LEFT NAV BAR - NEWSLETTER FORM -->
+		<!-- MAIN CONTENT -->
+		<div id="main_content" class="col-sm-11">
+			<h2 class='intro'>
+				Gvianeonvqo
+			</h2>
 
-	<!-- BLOG POSTS -->
-	<div id="blog-content">
-		<div class='row'>
+			<div class='explanation'>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
 
-			<div class='col-xs 6 col-sm-4 post'>
-				<a href='#' class='post-box'>
-					<figure>
-						<img src='img/image1.jpg' />
-						<div class='cover'> </div>
-					</figure>
-					<p>
-						<span class="category"> HTML </span>
-						<br></br>
-						Frameworks you should know
-					</p>
-				</a>
-			</div>
-			<div class='col-xs 6 col-sm-4 post'>
-				<a href='#' class='post-box'>
-					<figure>
-						<img src='img/image2.jpg' />
-					</figure>
-					<p>
-						<span class="category"> CSS </span>
-						<br></br>
-						Design trends in 2016
-					</p>
-				</a>
-			</div>
-			<div class='col-xs 6 col-sm-4 post'>
-				<a href='#' class='post-box'>
-					<figure>
-						<img src='img/image3.jpg' />
-					</figure>
-					<p>
-						<span class="category"> Javascript </span>
-						<br></br>
-						An introduction to jQuery
-					</p>
-				</a>
-			</div>
-		</div>
-
-		<div class='row'>
-
-			<div class='col-xs 6 col-sm-4 post'>
-				<a href='#' class='post-box'>
-					<figure>
-						<img src='img/image4.jpg' />
-					</figure>
-					<p>
-						<span class="category"> CSS </span>
-						<br></br>
-						Making the most of Bootstrap
-					</p>
-				</a>
-			</div>
-			<div class='col-xs 6 col-sm-4 post'>
-				<a href='#' class='post-box'>
-					<figure>
-						<img src='img/image5.jpg' />
-					</figure>
-					<p>
-						<span class="category"> Python </span>
-						<br></br>
-						Creating simple games with Python
-					</p>
-				</a>
-			</div>
-			<div class='col-xs 6 col-sm-4 post'>
-				<a href='#' class='post-box'>
-					<figure>
-						<img src='img/image6.jpg' />
-					</figure>
-					<p>
-						<span class="category"> HTML </span>
-						<br></br>
-						Clean HTML templates
-					</p>
-				</a>
-			</div>
-		</div>
-
-		<div class='row'>
-
-			<div class='col-xs 6 col-sm-4 post'>
-				<a href='#' class='post-box'>
-					<figure>
-						<img src='img/image7.jpg' />
-					</figure>
-					<p>
-						<span class="category"> Python </span>
-						<br></br>
-						Building apps with Twitter's API
-					</p>
-				</a>
-			</div>
-			<div class='col-xs 6 col-sm-4 post'>
-				<a href='#' class='post-box'>
-					<figure>
-						<img src='img/image8.jpg' />
-					</figure>
-					<p>
-						<span class="category"> Javascript </span>
-						<br></br>
-						What's new in jQuery 3.0
-					</p>
-				</a>
-			</div>
-			<div class='col-xs 6 col-sm-4 post'>
-				<a href='#' class='post-box'>
-					<figure>
-						<img src='img/image9.jpg' />
-					</figure>
-					<p>
-						<span class="category"> Python </span>
-						<br></br>
-						Django vs Flask vs Pyramid
-					</p>
-				</a>
-			</div>
-		</div>
-
-		<div class='row'>
-
-			<div class='col-xs 6 col-sm-4 post'>
-				<a href='#' class='post-box'>
-					<figure>
-						<img src='img/image10.jpg' />
-					</figure>
-					<p>
-						<span class="category"> CSS </span>
-						<br></br>
-						Tricks to avoid Javascript
-					</p>
-				</a>
-			</div>
-			<div class='col-xs 6 col-sm-4 post'>
-				<a href='#' class='post-box'>
-					<figure>
-						<img src='img/image11.jpg' />
-					</figure>
-					<p>
-						<span class="category"> Javascript </span>
-						<br></br>
-						Top jQuery plugins
-					</p>
-				</a>
-			</div>
-			<div class='col-xs 6 col-sm-4 post'>
-				<a href='#' class='post-box'>
-					<figure>
-						<img src='img/image12.jpg' />
-					</figure>
-					<p>
-						<span class="category"> Python </span>
-						<br></br>
-						Using virtual environments
-					</p>
-				</a>
-			</div>
 		</div>
 	</div>
-</div>
-<!-- ENG OF BLOG POSTS -->
+	<!-- END OF MAIN CONTENT -->
 
 <!-- Small Screen Newsletter Form -->
 <div class="newsletter-form row" id="news-footer">
 	<div class="col-sm-12 col-xs-12">
 		<h3 id="news-title-footer">Newsletter</h3>
 		<form name="htmlform_newsletter" method="post" action="newsletter-sub.html" autocomplete="on">
-			<p><textarea rows='1' class="name" type="text" name="fname" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="30" onkeypress="return isAlphaKey(event)" required></textarea></p>
+			<p><textarea rows='1' class="name" type="text" name="fname" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="12" onkeypress="return isAlphaKey(event)" required></textarea></p>
 			<p><textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; Email" maxlength="80" required></textarea></p>
-			<label for="surname"></label>
 			<input class="sub-btn" type="submit" value="Subscribe!">
 			<p id="news-hide-footer"><textarea rows='1' class="name" type="email" name="email" maxlength="80" placeholder="&#xf0e0; name@example.com" required></textarea></p>
 		</form>
@@ -293,7 +149,7 @@
 			<a href="mailto:support.learntocode@codemail.com?Subject=Email%20Title"><i title="Email Us" class="fa fa-3x fa-envelope-o" aria-hidden="true"></i> </a>
 		</p>
 		<p class="alignleft"> <!-- Make text muted? -->
-			<a href="terms.html">Terms</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="sitemap.html">Sitemap</a> | <a href="about.html#contact-us">Contact</a>
+			<a id="active-ft" href="terms.html">Terms</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="sitemap.html">Sitemap</a> | <a href="about.html#contact-us">Contact</a>
 		</p>
 		<p class="alignright">
 			Made in London &copy <a href="#">2016 </a>
@@ -304,7 +160,9 @@
 <!-- BACK TO TOP BUTTON -->
 <a href="#0" class="cd-top cd-top-other">Top</a>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/main.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
 
 </body>
+
 </html>
