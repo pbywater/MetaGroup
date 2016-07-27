@@ -10,22 +10,22 @@
 	<link rel="stylesheet" type="text/css" href="css/forms.css">
   <link rel="stylesheet" type="text/css" href="css/quiz.css">
 
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-	<!-- Latest compiled JavaScript -->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script src='js/main.js'></script>
-	
-	<!-- Font Package: Roboto -->
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,900italic,900,700italic,700,500italic,500' rel='stylesheet' type='text/css'>
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src='js/main.js'></script>
 
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!-- Font Package: Roboto -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,900italic,900,700italic,700,500italic,500' rel='stylesheet' type='text/css'>
 
-	<title>Quiz - Learn to Code</title>
-	<!-- Favicon -->
-	<link rel="icon" href="favicon4.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon"> 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+  <title>Quiz - Learn to Code</title>
+  <!-- Favicon -->
+  <link rel="icon" href="favicon4.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon"> 
 
 </head>
 
@@ -38,30 +38,30 @@
     </h3>
   </div>
 
-<!-- NAVBAR --> 
-<nav>
-  <ul class="nav" id="other-nav">
-    <li class='hvr-shutter-out-horizontal' role="presentation"><a href="index.html">Home</a>
-    </li>
-    <li class='hvr-shutter-out-horizontal' role="presentation"><a href="about.html">About</a>
-    </li>
-    <li class='hvr-shutter-out-horizontal' role="presentation"><a href="blog.html">Blog</a>
-    </li>
-    <li class='hvr-shutter-out-horizontal' role="presentation"><a href="resources.html">Resources</a>
-      <ul class="drop-menu">
-        <a href="resources-python.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Python</li></a>
-        <a href="resources-html-css.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">HTML/CSS</li></a>
-        <a href="resources-java.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Java/JS</li></a>
-        <a href="resources-sql.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">SQL</li></a>
-        <a href="resources-ruby.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Ruby</li></a>
-        <a href="resources-c.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">C/C++</li></a>
-      </ul>
-    </li>
-    <li id="active" class='hvr-shutter-out-horizontal' role="presentation"><a href="quiz.html">Quiz</a>
-    </li>
-  </ul>
-</nav>
-
+  <!-- NAVBAR --> 
+  <nav>
+    <ul class="nav" id="other-nav">
+      <li class='hvr-shutter-out-horizontal' role="presentation"><a href="index.html">Home</a>
+      </li>
+      <li class='hvr-shutter-out-horizontal' role="presentation"><a href="about.html">About</a>
+      </li>
+      <li class='hvr-shutter-out-horizontal' role="presentation"><a href="blog.html">Blog</a>
+      </li>
+      <li class='hvr-shutter-out-horizontal' role="presentation"><a href="resources.html">Resources</a>
+        <ul class="drop-menu">
+          <a href="resources-python.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Python</li></a>
+          <a href="resources-html-css.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">HTML/CSS</li></a>
+          <a href="resources-java.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Java/JS</li></a>
+          <a href="resources-sql.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">SQL</li></a>
+          <a href="resources-ruby.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Ruby</li></a>
+          <a href="resources-c.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">C/C++</li></a>
+        </ul>
+      </li>
+      <li id="active" class='hvr-shutter-out-horizontal' role="presentation"><a href="quiz.html">Quiz</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- END OF NAVBAR -->
 
   <!-- CONTENT -->
   <div class='container'>
@@ -81,53 +81,58 @@
       </nav>
     </div>
     <!-- END OF LEFT NAV BAR - NEWSLETTER FORM -->
-    <div id="main_content">
-    <div class="col-sm-11">
-    
+    <!-- MAIN CONTENT -->
+    <div id="main_content" class="col-sm-11">
+      <h2 class='intro'>
+          Test your knowledge!
+        </h2>
 
-        <!-- QUIZ-->
-        <div class="wrapper">
-          <div id="quiz">
-            <h1>Trivia quiz</h1>
+        <div class='explanation'>
+          <p>
+            Take our quiz to test your knowledge coding knowledge and figure out your weak points.
             
-            <p class="questions">
+            Once you finish, head over to the <a href="resources.html">resources page</a> for a comprehensive array of online coding resources or our <a href="blog.html>">blog</a> for the latest coding tips and tricks.
+          </p>
+        </div>
+        <br />
+      <!-- QUIZ-->
+      <div class="wrapper">
+        <div id="quiz">
+          <h1>Trivia quiz</h1>
 
-            </p>
+          <p class="questions">
 
-            <div class="answers">
-            </div> 
-            <div class="checkAnswers">               
-              <div class="checker"> 
-              </div>
+          </p>
+
+          <div class="answers">
+          </div> 
+          <div class="checkAnswers">               
+            <div class="checker"> 
             </div>
           </div>
         </div>
       </div>
-          <!-- QUIZ END -->
-
-
-
-
-        
-
-   </div>
- </div>
- <!-- END OF MAIN CONTENT -->
+      
+      <!-- QUIZ END -->
+    </div>
+    <!-- END OF MAIN CONTENT -->
+  </div>
+  <!-- END CONTENT -->
 </div>
 
 <!-- Small Screen Newsletter Form -->
-  <div class="newsletter-form row" id="news-footer">
-    <div class="col-sm-12 col-xs-12">
-      <h3 id="news-title-footer">Newsletter</h3>
-      <form name="htmlform_newsletter" method="post" action="newsletter-sub.html" autocomplete="on">
-        <p><textarea rows='1' class="name" type="text" name="fname" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="12" onkeypress="return isAlphaKey(event)" required></textarea></p>
-        <p><textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; Email" maxlength="80" required></textarea></p>
-        <input class="sub-btn" type="submit" value="Subscribe!">
-        <p id="news-hide-footer"><textarea rows='1' class="name" type="email" name="email" maxlength="80" placeholder="&#xf0e0; name@example.com" required></textarea></p>
-      </form>
-    </div>
+<div class="newsletter-form row" id="news-footer">
+  <div class="col-sm-12 col-xs-12">
+    <h3 id="news-title-footer">Newsletter</h3>
+    <form name="htmlform_newsletter" method="post" action="newsletter-sub.html" autocomplete="on">
+      <p><textarea rows='1' class="name" type="text" name="fname" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="12" onkeypress="return isAlphaKey(event)" required></textarea></p>
+      <p><textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; Email" maxlength="80" required></textarea></p>
+      <input class="sub-btn" type="submit" value="Subscribe!">
+      <p id="news-hide-footer"><textarea rows='1' class="name" type="email" name="email" maxlength="80" placeholder="&#xf0e0; name@example.com" required></textarea></p>
+    </form>
   </div>
-  <!-- End of small screen newsletter form -->
+</div>
+<!-- End of small screen newsletter form -->
 
 
 
